@@ -202,10 +202,11 @@ class ChainApi(RPCInterface, ChainNative):
         return super().push_transactions(txs)
 
     def strip_prefix(self, pub_key):
-        if pub_key.startswith('EOS'):
-            return pub_key[3:]
-        else:
-            return pub_key
+        prefixes = {'EOS', 'AM', config.public_key_prefix}
+        for p in prefixes:
+            if pub_key.startswith(p):
+                return pub_key[len(p):]
+        return pub_key
 
     def get_account(self, account):
         if not self.s2n(account):

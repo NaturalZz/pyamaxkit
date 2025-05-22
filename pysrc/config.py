@@ -27,11 +27,22 @@ def set_nodes(_nodes):
 #set in eosapi.py:eosapi.__init__
 
 main_token = 'EOS'
+public_key_prefix = 'EOS'
 system_contract = 'eosio'
 main_token_contract = 'eosio.token'
 python_contract = 'uuoscontract'
 contract_deploy_type = 0
 network_url = ''
+
+def set_public_key_prefix(prefix: str):
+    """Set the public key prefix used for generated keys."""
+    global public_key_prefix
+    public_key_prefix = prefix
+    try:
+        from pyeoskit import eosapi
+        eosapi.set_public_key_prefix(prefix)
+    except Exception:
+        pass
 
 code_permission_name = 'eosio.code'
 
@@ -59,8 +70,7 @@ def setup_eos_network():
     main_token_contract = 'eosio.token'
     network_url = 'https://api.eosn.io'
     code_permission_name = 'eosio.code'
-    from pyeoskit import eosapi
-    eosapi.set_public_key_prefix(main_token)
+    set_public_key_prefix('EOS')
 
 def setup_eos_test_network(url = 'https://api.testnet.eos.io', deploy_type=1):
     global main_token
@@ -72,7 +82,7 @@ def setup_eos_test_network(url = 'https://api.testnet.eos.io', deploy_type=1):
     global contract_deploy_type
 
     import os
-    from pyeoskit import eosapi, wallet
+    from pyeoskit import wallet
 
     contract_deploy_type = deploy_type
     network_url = url
@@ -82,7 +92,7 @@ def setup_eos_test_network(url = 'https://api.testnet.eos.io', deploy_type=1):
     main_token_contract = 'eosio.token'
     python_contract = 'ceyelqpjeeia'
     code_permission_name = 'eosio.code'
-    eosapi.set_public_key_prefix('EOS')
+    set_public_key_prefix('EOS')
 
     if os.path.exists('test.wallet'):
         os.remove('test.wallet')

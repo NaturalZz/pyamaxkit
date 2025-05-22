@@ -117,8 +117,10 @@ def _get_public_key(index):
     ripemd.update(public_key_compressed)
     check = ripemd.digest()[:4]
 
+    from . import config
     buff = public_key_compressed + check
-    pub1 = "EOS" + base58.b58encode(buff).decode()
+    prefix = config.public_key_prefix
+    pub1 = prefix + base58.b58encode(buff).decode()
     pub2 = address.decode()
     assert pub1 == pub2
     return pub1
