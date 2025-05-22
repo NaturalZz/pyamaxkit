@@ -18,7 +18,7 @@ if platform.system() == 'Windows':
 
 setup(
     name="pyamaxkit",
-    version="1.1.12",
+    version="1.0.0",
     description="Python Toolkit for EOS",
     author='learnforpractice',
     license="MIT",
