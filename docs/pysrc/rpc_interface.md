@@ -1,6 +1,6 @@
 # RPCInterface
 
-> Auto-generated documentation for [pysrc.rpc_interface](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py) module.
+> Auto-generated documentation for [pysrc.rpc_interface](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py) module.
 
 - [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / RPCInterface
     - [RPCInterface](#rpcinterface)
@@ -72,7 +72,7 @@
 
 ## RPCInterface
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L8)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L8)
 
 ```python
 class RPCInterface(HttpClient):
@@ -81,7 +81,7 @@ class RPCInterface(HttpClient):
 
 ### RPCInterface().abi_bin_to_json
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L338)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L338)
 
 ```python
 def abi_bin_to_json(code, action, binargs) -> dict:
@@ -91,7 +91,7 @@ Convert bin hex back into Abi json definition.
 
 ### RPCInterface().abi_json_to_bin
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L323)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L323)
 
 ```python
 def abi_json_to_bin(code, action, args) -> dict:
@@ -101,7 +101,7 @@ Manually serialize json into binary hex.  The binayargs is usually stored in Mes
 
 ### RPCInterface().add_debug_contract
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L580)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L580)
 
 ```python
 def add_debug_contract(name, shared_lib_path) -> dict:
@@ -109,7 +109,7 @@ def add_debug_contract(name, shared_lib_path) -> dict:
 
 ### RPCInterface().add_greylist_accounts
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L695)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L695)
 
 ```python
 def add_greylist_accounts(accounts) -> dict:
@@ -117,7 +117,7 @@ def add_greylist_accounts(accounts) -> dict:
 
 ### RPCInterface().call_contract
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L354)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L354)
 
 ```python
 def call_contract(code, action, args) -> dict:
@@ -127,7 +127,7 @@ Convert bin hex back into Abi json definition.
 
 ### RPCInterface().clear_debug_contract
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L592)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L592)
 
 ```python
 def clear_debug_contract(name) -> dict:
@@ -135,7 +135,7 @@ def clear_debug_contract(name) -> dict:
 
 ### RPCInterface().clear_filter_on
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L849)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L849)
 
 ```python
 def clear_filter_on() -> dict:
@@ -143,7 +143,7 @@ def clear_filter_on() -> dict:
 
 ### RPCInterface().clear_filter_out
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L859)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L859)
 
 ```python
 def clear_filter_out() -> dict:
@@ -151,7 +151,7 @@ def clear_filter_out() -> dict:
 
 ### RPCInterface().create_snapshot
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L771)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L771)
 
 ```python
 def create_snapshot(head_block_id, snapshot_name) -> dict:
@@ -159,7 +159,7 @@ def create_snapshot(head_block_id, snapshot_name) -> dict:
 
 ### RPCInterface().enable_debug
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L560)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L560)
 
 ```python
 def enable_debug(enable) -> dict:
@@ -169,7 +169,7 @@ Retrieve supported apis.
 
 ### RPCInterface().get_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L169)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L169)
 
 ```python
 def get_abi(account_name) -> dict:
@@ -179,7 +179,7 @@ Fetch a blockchain account
 
 ### RPCInterface().get_account
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L129)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L129)
 
 ```python
 def get_account(account_name) -> dict:
@@ -189,7 +189,7 @@ Fetch a blockchain account
 
 ### RPCInterface().get_account_ram_corrections
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L812)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L812)
 
 ```python
 def get_account_ram_corrections(
@@ -201,7 +201,7 @@ def get_account_ram_corrections(
 
 ### RPCInterface().get_actions
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L427)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L427)
 
 ```python
 def get_actions(account_name, pos, offset) -> dict:
@@ -211,7 +211,7 @@ get_actions
 
 ### RPCInterface().get_activated_protocol_features
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L89)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L89)
 
 ```python
 def get_activated_protocol_features(
@@ -225,7 +225,7 @@ def get_activated_protocol_features(
 
 ### RPCInterface().get_block
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L103)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L103)
 
 ```python
 def get_block(block_num_or_id) -> dict:
@@ -235,7 +235,7 @@ Fetch a block from the blockchain.
 
 ### RPCInterface().get_block_header_state
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L116)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L116)
 
 ```python
 def get_block_header_state(block_num_or_id):
@@ -245,7 +245,7 @@ Fetch a block header state from the blockchain.
 
 ### RPCInterface().get_code
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L142)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L142)
 
 ```python
 def get_code(account_name, code_as_wasm=True) -> dict:
@@ -255,7 +255,7 @@ Fetch smart contract code
 
 ### RPCInterface().get_code_hash
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L156)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L156)
 
 ```python
 def get_code_hash(account_name) -> dict:
@@ -265,7 +265,7 @@ Fetch smart contract code
 
 ### RPCInterface().get_controlled_accounts
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L480)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L480)
 
 ```python
 def get_controlled_accounts(controlling_account) -> dict:
@@ -275,7 +275,7 @@ Retrieve accounts has the specified key.
 
 ### RPCInterface().get_currency_balance
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L48)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L48)
 
 ```python
 def get_currency_balance(code, account, symbol) -> dict:
@@ -285,7 +285,7 @@ get_currency_balance
 
 ### RPCInterface().get_currency_balance
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L254)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L254)
 
 ```python
 def get_currency_balance(code, account, symbol) -> dict:
@@ -295,7 +295,7 @@ Get balance from an account.
 
 ### RPCInterface().get_currency_stats
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L63)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L63)
 
 ```python
 def get_currency_stats(code, symbol) -> dict:
@@ -305,7 +305,7 @@ get_currency_stats
 
 ### RPCInterface().get_currency_stats
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L269)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L269)
 
 ```python
 def get_currency_stats(code, symbol) -> dict:
@@ -313,7 +313,7 @@ def get_currency_stats(code, symbol) -> dict:
 
 ### RPCInterface().get_db_size
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L500)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L500)
 
 ```python
 def get_db_size() -> dict:
@@ -323,7 +323,7 @@ Retrieve accounts has the specified key.
 
 ### RPCInterface().get_greylist
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L719)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L719)
 
 ```python
 def get_greylist() -> dict:
@@ -331,7 +331,7 @@ def get_greylist() -> dict:
 
 ### RPCInterface().get_history_db_size
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L492)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L492)
 
 ```python
 def get_history_db_size() -> dict:
@@ -339,7 +339,7 @@ def get_history_db_size() -> dict:
 
 ### RPCInterface().get_info
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L77)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L77)
 
 ```python
 def get_info() -> dict:
@@ -349,7 +349,7 @@ Return general network information.
 
 ### RPCInterface().get_integrity_hash
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L762)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L762)
 
 ```python
 def get_integrity_hash() -> dict:
@@ -357,7 +357,7 @@ def get_integrity_hash() -> dict:
 
 ### RPCInterface().get_key_accounts
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L456)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L456)
 
 ```python
 def get_key_accounts(public_key) -> dict:
@@ -367,7 +367,7 @@ Retrieve accounts has the specified key.
 
 ### RPCInterface().get_key_accounts_ex
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L468)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L468)
 
 ```python
 def get_key_accounts_ex(public_key) -> dict:
@@ -377,7 +377,7 @@ Retrieve accounts has the specified key.
 
 ### RPCInterface().get_producer_schedule
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L298)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L298)
 
 ```python
 def get_producer_schedule() -> dict:
@@ -385,7 +385,7 @@ def get_producer_schedule() -> dict:
 
 ### RPCInterface().get_producers
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L282)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L282)
 
 ```python
 def get_producers(json, lower_bound, limit) -> dict:
@@ -395,7 +395,7 @@ Example: eosapi.get_producers(True, "", 100)
 
 ### RPCInterface().get_raw_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L195)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L195)
 
 ```python
 def get_raw_abi(account_name, abi_hash=None) -> dict:
@@ -405,7 +405,7 @@ Fetch blockchain account abi info
 
 ### RPCInterface().get_raw_code_and_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L182)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L182)
 
 ```python
 def get_raw_code_and_abi(account_name) -> dict:
@@ -415,7 +415,7 @@ Fetch blockchain code and abi of an account
 
 ### RPCInterface().get_required_keys
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L369)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L369)
 
 ```python
 def get_required_keys(transaction: Union[dict, str], available_keys) -> dict:
@@ -425,7 +425,7 @@ get_required_keys
 
 ### RPCInterface().get_runtime_options
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L641)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L641)
 
 ```python
 def get_runtime_options():
@@ -433,7 +433,7 @@ def get_runtime_options():
 
 ### RPCInterface().get_scheduled_protocol_feature_activations
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L794)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L794)
 
 ```python
 def get_scheduled_protocol_feature_activations() -> dict:
@@ -441,7 +441,7 @@ def get_scheduled_protocol_feature_activations() -> dict:
 
 ### RPCInterface().get_scheduled_transactions
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L309)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L309)
 
 ```python
 def get_scheduled_transactions(json, lower_bound, limit=50) -> dict:
@@ -449,7 +449,7 @@ def get_scheduled_transactions(json, lower_bound, limit=50) -> dict:
 
 ### RPCInterface().get_supported_apis
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L550)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L550)
 
 ```python
 def get_supported_apis() -> dict:
@@ -459,7 +459,7 @@ Retrieve supported apis.
 
 ### RPCInterface().get_supported_protocol_features
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L803)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L803)
 
 ```python
 def get_supported_protocol_features(
@@ -470,7 +470,7 @@ def get_supported_protocol_features(
 
 ### RPCInterface().get_table_by_scope
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L237)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L237)
 
 ```python
 def get_table_by_scope(code, table, lower_bound, upper_bound) -> dict:
@@ -480,7 +480,7 @@ Fetch smart contract data from an account.
 
 ### RPCInterface().get_table_rows
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L209)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L209)
 
 ```python
 def get_table_rows(
@@ -504,7 +504,7 @@ index_position: "2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"|"10"
 
 ### RPCInterface().get_transaction
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L442)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L442)
 
 ```python
 def get_transaction(id, block_num_hint=0) -> dict:
@@ -514,7 +514,7 @@ Retrieve a transaction from the blockchain.
 
 ### RPCInterface().get_whitelist_blacklist
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L729)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L729)
 
 ```python
 def get_whitelist_blacklist() -> dict:
@@ -522,7 +522,7 @@ def get_whitelist_blacklist() -> dict:
 
 ### RPCInterface().is_debug_enabled
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L570)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L570)
 
 ```python
 def is_debug_enabled() -> dict:
@@ -530,7 +530,7 @@ def is_debug_enabled() -> dict:
 
 ### RPCInterface().net_connect
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L510)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L510)
 
 ```python
 def net_connect(address) -> dict:
@@ -540,7 +540,7 @@ Connect to a node address.
 
 ### RPCInterface().net_connections
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L540)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L540)
 
 ```python
 def net_connections() -> dict:
@@ -550,7 +550,7 @@ Get node connections.
 
 ### RPCInterface().net_disconnect
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L520)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L520)
 
 ```python
 def net_disconnect(address) -> dict:
@@ -560,7 +560,7 @@ Disconnect from a node address.
 
 ### RPCInterface().net_status
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L530)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L530)
 
 ```python
 def net_status(address) -> dict:
@@ -570,7 +570,7 @@ Retrieve connection status.
 
 ### RPCInterface().pause
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L617)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L617)
 
 ```python
 def pause():
@@ -578,7 +578,7 @@ def pause():
 
 ### RPCInterface().paused
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L633)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L633)
 
 ```python
 def paused():
@@ -586,7 +586,7 @@ def paused():
 
 ### RPCInterface().push_block
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L386)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L386)
 
 ```python
 def push_block(block) -> dict:
@@ -596,7 +596,7 @@ Append a block to the chain database.
 
 ### RPCInterface().push_transaction
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L399)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L399)
 
 ```python
 def push_transaction(signed_transaction) -> dict:
@@ -606,7 +606,7 @@ Attempts to push the transaction into the pending queue.
 
 ### RPCInterface().push_transactions
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L408)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L408)
 
 ```python
 def push_transactions(signed_transactions) -> dict:
@@ -616,7 +616,7 @@ Attempts to push transactions into the pending queue.
 
 ### RPCInterface().remove_greylist_accounts
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L707)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L707)
 
 ```python
 def remove_greylist_accounts(accounts) -> dict:
@@ -624,7 +624,7 @@ def remove_greylist_accounts(accounts) -> dict:
 
 ### RPCInterface().resume
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L625)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L625)
 
 ```python
 def resume():
@@ -632,7 +632,7 @@ def resume():
 
 ### RPCInterface().schedule_protocol_feature_activations
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L783)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L783)
 
 ```python
 def schedule_protocol_feature_activations(protocol_features) -> dict:
@@ -640,7 +640,7 @@ def schedule_protocol_feature_activations(protocol_features) -> dict:
 
 ### RPCInterface().set_filter_on
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L825)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L825)
 
 ```python
 def set_filter_on(filter_in) -> dict:
@@ -651,7 +651,7 @@ receiver:action:actor
 
 ### RPCInterface().set_filter_out
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L837)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L837)
 
 ```python
 def set_filter_out(filter_out) -> dict:
@@ -662,7 +662,7 @@ receiver:action:actor
 
 ### RPCInterface().set_logger_level
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L602)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L602)
 
 ```python
 def set_logger_level(logger='default', level='info') -> dict:
@@ -673,7 +673,7 @@ level: debug, info, warn, error, off
 
 ### RPCInterface().set_whitelist_blacklist
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L739)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L739)
 
 ```python
 def set_whitelist_blacklist(
@@ -695,7 +695,7 @@ fc::optional< flat_set<public_key_type> > key_blacklist;
 
 ### RPCInterface().stream_blocks
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L13)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L13)
 
 ```python
 def stream_blocks(start_block=None, mode='irreversible'):
@@ -711,7 +711,7 @@ Stream raw blocks.
 
 ### RPCInterface().update_runtime_options
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L649)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L649)
 
 ```python
 def update_runtime_options(
@@ -737,7 +737,7 @@ struct runtime_options {
 
 ## WalletClient
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/rpc_interface.py#L869)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/rpc_interface.py#L869)
 
 ```python
 class WalletClient(HttpClient):

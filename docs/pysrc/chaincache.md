@@ -1,6 +1,6 @@
 # ChainCache
 
-> Auto-generated documentation for [pysrc.chaincache](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py) module.
+> Auto-generated documentation for [pysrc.chaincache](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py) module.
 
 - [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / ChainCache
     - [ChainCache](#chaincache)
@@ -22,7 +22,7 @@
 
 ## ChainCache
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L11)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L11)
 
 ```python
 class ChainCache(object):
@@ -31,7 +31,7 @@ class ChainCache(object):
 
 ### ChainCache().get_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L51)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L51)
 
 ```python
 def get_abi(account):
@@ -39,7 +39,7 @@ def get_abi(account):
 
 ### ChainCache().get_account
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L68)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L68)
 
 ```python
 def get_account(account):
@@ -47,7 +47,7 @@ def get_account(account):
 
 ### ChainCache().get_code
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L39)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L39)
 
 ```python
 def get_code(account):
@@ -55,7 +55,7 @@ def get_code(account):
 
 ### ChainCache().get_info
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L36)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L36)
 
 ```python
 def get_info(info):
@@ -63,7 +63,7 @@ def get_info(info):
 
 ### ChainCache().get_public_keys
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L80)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L80)
 
 ```python
 def get_public_keys(account, key_type):
@@ -71,7 +71,7 @@ def get_public_keys(account, key_type):
 
 ### ChainCache().get_value
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L23)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L23)
 
 ```python
 def get_value(key):
@@ -79,7 +79,7 @@ def get_value(key):
 
 ### ChainCache().remove_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L59)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L59)
 
 ```python
 def remove_abi(account):
@@ -87,7 +87,7 @@ def remove_abi(account):
 
 ### ChainCache().remove_code
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L47)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L47)
 
 ```python
 def remove_code(account):
@@ -95,7 +95,7 @@ def remove_code(account):
 
 ### ChainCache().reset
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L17)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L17)
 
 ```python
 def reset():
@@ -103,7 +103,7 @@ def reset():
 
 ### ChainCache().save
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L20)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L20)
 
 ```python
 def save():
@@ -111,7 +111,7 @@ def save():
 
 ### ChainCache().set_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L56)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L56)
 
 ```python
 def set_abi(account, abi):
@@ -119,7 +119,7 @@ def set_abi(account, abi):
 
 ### ChainCache().set_account
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L63)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L63)
 
 ```python
 def set_account(account, info):
@@ -127,7 +127,7 @@ def set_account(account, info):
 
 ### ChainCache().set_code
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L44)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L44)
 
 ```python
 def set_code(account, code):
@@ -135,7 +135,7 @@ def set_code(account, code):
 
 ### ChainCache().set_info
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L33)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L33)
 
 ```python
 def set_info(info):
@@ -143,7 +143,7 @@ def set_info(info):
 
 ### ChainCache().set_value
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chaincache.py#L29)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chaincache.py#L29)
 
 ```python
 def set_value(key, value):

@@ -1,6 +1,6 @@
 # Pysrc
 
-> Auto-generated documentation for [pysrc](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/__init__.py) module.
+> Auto-generated documentation for [pysrc](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/__init__.py) module.
 
 - [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / Pysrc
     - Modules

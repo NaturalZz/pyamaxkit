@@ -1,6 +1,6 @@
 # Wasmcompiler
 
-> Auto-generated documentation for [pysrc.wasmcompiler](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/wasmcompiler.py) module.
+> Auto-generated documentation for [pysrc.wasmcompiler](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/wasmcompiler.py) module.
 
 - [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Wasmcompiler
     - [cpp_compiler](#cpp_compiler)
@@ -16,7 +16,7 @@
 
 ## cpp_compiler
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/wasmcompiler.py#L20)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/wasmcompiler.py#L20)
 
 ```python
 class cpp_compiler(object):
@@ -25,7 +25,7 @@ class cpp_compiler(object):
 
 ### cpp_compiler().compile_cpp_file
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/wasmcompiler.py#L29)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/wasmcompiler.py#L29)
 
 ```python
 def compile_cpp_file(opt='O3'):
@@ -33,7 +33,7 @@ def compile_cpp_file(opt='O3'):
 
 ## go_compiler
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/wasmcompiler.py#L179)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/wasmcompiler.py#L179)
 
 ```python
 class go_compiler(object):
@@ -42,7 +42,7 @@ class go_compiler(object):
 
 ### go_compiler().compile_go_file
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/wasmcompiler.py#L188)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/wasmcompiler.py#L188)
 
 ```python
 def compile_go_file(opt='O3', replace=''):
@@ -50,7 +50,7 @@ def compile_go_file(opt='O3', replace=''):
 
 ## compile_cpp_file
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/wasmcompiler.py#L130)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/wasmcompiler.py#L130)
 
 ```python
 def compile_cpp_file(src_path, includes=[], entry='apply', opt='O3'):
@@ -58,7 +58,7 @@ def compile_cpp_file(src_path, includes=[], entry='apply', opt='O3'):
 
 ## compile_cpp_src
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/wasmcompiler.py#L134)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/wasmcompiler.py#L134)
 
 ```python
 def compile_cpp_src(
@@ -73,7 +73,7 @@ def compile_cpp_src(
 
 ## compile_go_file
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/wasmcompiler.py#L233)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/wasmcompiler.py#L233)
 
 ```python
 def compile_go_file(
@@ -87,7 +87,7 @@ def compile_go_file(
 
 ## compile_go_src
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/wasmcompiler.py#L237)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/wasmcompiler.py#L237)
 
 ```python
 def compile_go_src(
@@ -103,7 +103,7 @@ def compile_go_src(
 
 ## compile_with_eosio_cpp
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/wasmcompiler.py#L145)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/wasmcompiler.py#L145)
 
 ```python
 def compile_with_eosio_cpp(contract_name, code, options=''):
@@ -113,7 +113,7 @@ contract_name must match the class name in code, otherwise there will no abi gen
 
 ## find_eosio_cdt_path
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/wasmcompiler.py#L12)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/wasmcompiler.py#L12)
 
 ```python
 def find_eosio_cdt_path():

@@ -1,6 +1,6 @@
 # ChainNative
 
-> Auto-generated documentation for [pysrc.chainnative](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py) module.
+> Auto-generated documentation for [pysrc.chainnative](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py) module.
 
 - [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / ChainNative
     - [ChainNative](#chainnative)
@@ -36,7 +36,7 @@
 
 ## ChainNative
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L17)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L17)
 
 ```python
 class ChainNative(object):
@@ -44,7 +44,7 @@ class ChainNative(object):
 
 ### ChainNative.b2s
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L62)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L62)
 
 ```python
 @staticmethod
@@ -53,7 +53,7 @@ def b2s(b):
 
 ### ChainNative().check_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L77)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L77)
 
 ```python
 def check_abi(account):
@@ -61,7 +61,7 @@ def check_abi(account):
 
 ### ChainNative.clear_abi_cache
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L113)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L113)
 
 ```python
 @staticmethod
@@ -70,7 +70,7 @@ def clear_abi_cache(account):
 
 ### ChainNative().compile
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L224)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L224)
 
 ```python
 def compile(contract_name, code, src_type=SRC_TYPE_CPP):
@@ -92,7 +92,7 @@ bytecode and abi
 
 ### ChainNative.create_key
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L178)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L178)
 
 ```python
 @staticmethod
@@ -101,7 +101,7 @@ def create_key():
 
 ### ChainNative().gen_transaction
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L133)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L133)
 
 ```python
 def gen_transaction(actions, expiration, reference_block_id, chain_id):
@@ -109,7 +109,7 @@ def gen_transaction(actions, expiration, reference_block_id, chain_id):
 
 ### ChainNative().generate_transaction
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L160)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L160)
 
 ```python
 def generate_transaction(actions, expiration, reference_block_id, chain_id):
@@ -117,7 +117,7 @@ def generate_transaction(actions, expiration, reference_block_id, chain_id):
 
 ### ChainNative().get_abi_sync
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L19)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L19)
 
 ```python
 def get_abi_sync(account):
@@ -125,7 +125,7 @@ def get_abi_sync(account):
 
 ### ChainNative.get_debug_flag
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L247)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L247)
 
 ```python
 @staticmethod
@@ -134,7 +134,7 @@ def get_debug_flag() -> bool:
 
 ### ChainNative.get_public_key
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L182)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L182)
 
 ```python
 @staticmethod
@@ -143,7 +143,7 @@ def get_public_key(priv, eos_pub=True):
 
 ### ChainNative.mp_compile
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L199)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L199)
 
 ```python
 @staticmethod
@@ -152,7 +152,7 @@ def mp_compile(contract, src):
 
 ### ChainNative().mp_make_frozen
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L203)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L203)
 
 ```python
 def mp_make_frozen(code):
@@ -160,7 +160,7 @@ def mp_make_frozen(code):
 
 ### ChainNative.n2s
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L35)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L35)
 
 ```python
 @staticmethod
@@ -183,7 +183,7 @@ print(s)
 
 ### ChainNative.pack_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L123)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L123)
 
 ```python
 @staticmethod
@@ -192,7 +192,7 @@ def pack_abi(abi):
 
 ### ChainNative().pack_abi_type
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L101)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L101)
 
 ```python
 def pack_abi_type(account, struct_name, args):
@@ -200,7 +200,7 @@ def pack_abi_type(account, struct_name, args):
 
 ### ChainNative().pack_args
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L82)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L82)
 
 ```python
 def pack_args(account, action, args):
@@ -208,7 +208,7 @@ def pack_args(account, action, args):
 
 ### ChainNative.pack_transaction
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L168)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L168)
 
 ```python
 @staticmethod
@@ -217,7 +217,7 @@ def pack_transaction(tx, compress=0, json=False):
 
 ### ChainNative.recover_key
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L187)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L187)
 
 ```python
 @staticmethod
@@ -226,7 +226,7 @@ def recover_key(digest, sign):
 
 ### ChainNative.s2b
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L57)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L57)
 
 ```python
 @staticmethod
@@ -235,7 +235,7 @@ def s2b(s):
 
 ### ChainNative.s2n
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L50)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L50)
 
 ```python
 @staticmethod
@@ -244,7 +244,7 @@ def s2n(s):
 
 ### ChainNative.set_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L117)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L117)
 
 ```python
 @staticmethod
@@ -253,7 +253,7 @@ def set_abi(account, abi):
 
 ### ChainNative.set_debug_flag
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L243)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L243)
 
 ```python
 @staticmethod
@@ -262,7 +262,7 @@ def set_debug_flag(debug):
 
 ### ChainNative.sign_digest
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L192)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L192)
 
 ```python
 @staticmethod
@@ -271,7 +271,7 @@ def sign_digest(digest, priv_key):
 
 ### ChainNative.sign_transaction
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L163)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L163)
 
 ```python
 @staticmethod
@@ -280,7 +280,7 @@ def sign_transaction(tx, private_key, chain_id, json=False):
 
 ### ChainNative.string_to_symbol
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L67)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L67)
 
 ```python
 @staticmethod
@@ -289,7 +289,7 @@ def string_to_symbol(sym):
 
 ### ChainNative.unpack_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L129)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L129)
 
 ```python
 @staticmethod
@@ -298,7 +298,7 @@ def unpack_abi(packed_abi):
 
 ### ChainNative().unpack_abi_type
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L109)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L109)
 
 ```python
 def unpack_abi_type(account, struct_name, binargs):
@@ -306,7 +306,7 @@ def unpack_abi_type(account, struct_name, binargs):
 
 ### ChainNative().unpack_args
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L93)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L93)
 
 ```python
 def unpack_args(account, action, binargs, json=False):
@@ -314,7 +314,7 @@ def unpack_args(account, action, binargs, json=False):
 
 ### ChainNative.unpack_transaction
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainnative.py#L174)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainnative.py#L174)
 
 ```python
 @staticmethod

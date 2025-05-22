@@ -1,6 +1,6 @@
 # Exceptions
 
-> Auto-generated documentation for [pysrc.exceptions](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/exceptions.py) module.
+> Auto-generated documentation for [pysrc.exceptions](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/exceptions.py) module.
 
 - [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Exceptions
     - [ChainException](#chainexception)
@@ -9,7 +9,7 @@
 
 ## ChainException
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/exceptions.py#L9)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/exceptions.py#L9)
 
 ```python
 class ChainException(Exception):
@@ -18,7 +18,7 @@ class ChainException(Exception):
 
 ## NoResponse
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/exceptions.py#L3)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/exceptions.py#L3)
 
 ```python
 class NoResponse(Exception):
@@ -26,7 +26,7 @@ class NoResponse(Exception):
 
 ## WalletException
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/exceptions.py#L6)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/exceptions.py#L6)
 
 ```python
 class WalletException(Exception):
