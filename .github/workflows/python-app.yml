@@ -62,7 +62,7 @@ jobs:
       #     flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
       #     # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
       #     flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-      - name: Build pyeoskit
+      - name: Build pyamaxkit
         run: |
           python setup.py sdist bdist_wheel
       - name: get whl file
@@ -70,9 +70,9 @@ jobs:
         shell: bash
         run: |
           echo "value=`python scripts/get_whl_file.py dist`" >> $GITHUB_OUTPUT
-      - name: Install pyeoskit
+      - name: Install pyamaxkit
         run: |
-          python -m pip uninstall pyeoskit -y;python -m pip install ./dist/${{ steps.whlfile.outputs.value }}
+          python -m pip uninstall pyamaxkit -y;python -m pip install ./dist/${{ steps.whlfile.outputs.value }}
       - name: Test
         working-directory: ./pytest
         run: |
@@ -102,7 +102,7 @@ jobs:
         working-directory: dist
         run: |
           python ../scripts/download.py ${{ env.VERSION }}
-          rm pyeoskit-${{ env.VERSION }}-cp310-cp310-linux_x86_64.whl
+          rm pyamaxkit-${{ env.VERSION }}-cp310-cp310-linux_x86_64.whl
           rm -r wheelhouse
       - name: Upload wheel checksums
         uses: softprops/action-gh-release@v1

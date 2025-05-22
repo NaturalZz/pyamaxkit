@@ -1,6 +1,6 @@
 # Google docstrings examples
 
-> Auto-generated documentation for [pysrc.google_docstring](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/google_docstring.py) module.
+> Auto-generated documentation for [pysrc.google_docstring](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/google_docstring.py) module.
 
 - [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Google docstrings examples
     - [Links](#links)
@@ -17,7 +17,7 @@
 
 ## ClassExample
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/google_docstring.py#L13)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/google_docstring.py#L13)
 
 ```python
 class ClassExample():
@@ -32,7 +32,7 @@ Google-style class example
 
 ### ClassExample().method_example
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/google_docstring.py#L22)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/google_docstring.py#L22)
 
 ```python
 def method_example(text: str = 'hello') -> int:
@@ -76,7 +76,7 @@ to use the function
 
 ## function_example
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/google_docstring.py#L56)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/google_docstring.py#L56)
 
 ```python
 def function_example(arg1, arg2, arg3=None):
@@ -116,7 +116,7 @@ print result
 
 ## function_with_pep484_type_annotations
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/google_docstring.py#L87)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/google_docstring.py#L87)
 
 ```python
 def function_with_pep484_type_annotations(param1: int, param2: str) -> bool:

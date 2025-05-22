@@ -9,7 +9,7 @@ Full Pyeoskit project documentation can be found in [Modules](MODULES.md#pyeoski
 - [Pyeoskit Index](#pyeoskit-index)
 - [Latest Release](#latest-release)
 - [Installation](#installation)
-- [[Full List of Pyeoskit Project Modules.](https://learnforpractice.github.io/pyeoskit/#/MODULES?id=pyeoskit-modules)](#full-list-of-pyeoskit-project-moduleshttpslearnforpracticegithubiopyeoskitmodulesidpyeoskit-modules)
+- [[Full List of Pyeoskit Project Modules.](https://learnforpractice.github.io/pyamaxkit/#/MODULES?id=pyeoskit-modules)](#full-list-of-pyeoskit-project-moduleshttpslearnforpracticegithubiopyeoskitmodulesidpyeoskit-modules)
 - [Building from Source Code](#building-from-source-code)
         - [Installing Prerequisites](#installing-prerequisites)
         - [Downloading Source Code](#downloading-source-code)
@@ -18,23 +18,23 @@ Full Pyeoskit project documentation can be found in [Modules](MODULES.md#pyeoski
 
 # Latest Release
 
-[pyeoskit v1.1.3](https://github.com/learnforpractice/pyeoskit/releases)
+[pyamaxkit v1.1.3](https://github.com/AMAX-DAO-DEV/pyamaxkit/releases)
 
 # Installation
 
 ```bash
 python3 -m pip install --upgrade pip
-python3 -m pip install pyeoskit
+python3 -m pip install pyamaxkit
 ```
 
 On Windows platform:
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install pyeoskit
+python -m pip install pyamaxkit
 ```
 
-# [Full List of Pyeoskit Project Modules.](https://learnforpractice.github.io/pyeoskit/#/MODULES?id=pyeoskit-modules)
+# [Full List of Pyeoskit Project Modules.](https://learnforpractice.github.io/pyamaxkit/#/MODULES?id=pyeoskit-modules)
 
 # Building from Source Code
 
@@ -65,8 +65,8 @@ cmd -k /path/to/gcc/mingwvars.bat
 ### Downloading Source Code
 
 ```
-git clone https://www.github.com/learnforpractice/pyeoskit
-cd pyeoskit
+git clone https://www.github.com/AMAX-DAO-DEV/pyamaxkit
+cd pyamaxkit
 git submodule update --init --recursive
 ```
 
@@ -89,7 +89,7 @@ python setup.py sdist bdist_wheel
 
 For Windows platform
 ```
-python -m pip uninstall pyeoskit -y;python -m pip install .\dist\pyeoskit-[SUFFIX].whl
+python -m pip uninstall pyamaxkit -y;python -m pip install .\dist\pyamaxkit-[SUFFIX].whl
 ```
 
 ### Example1

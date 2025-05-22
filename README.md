@@ -1,7 +1,7 @@
 Python Toolkit for EOS
 
-[![PyPi](https://img.shields.io/pypi/v/pyeoskit.svg)](https://pypi.org/project/pyeoskit)
-[![PyPi](https://img.shields.io/pypi/dm/pyeoskit.svg)](https://pypi.org/project/pyeoskit)
+[![PyPi](https://img.shields.io/pypi/v/pyamaxkit.svg)](https://pypi.org/project/pyamaxkit)
+[![PyPi](https://img.shields.io/pypi/dm/pyamaxkit.svg)](https://pypi.org/project/pyamaxkit)
 
 # Installation
 
@@ -9,14 +9,14 @@ Python Toolkit for EOS
 
 ```bash
 python3 -m pip install -U pip
-python3 -m pip install pyeoskit
+python3 -m pip install pyamaxkit
 ```
 
 ## On Windows platform:
 
 ```bash
 python -m pip install -U pip
-python -m pip install pyeoskit
+python -m pip install pyamaxkit
 ```
 
 ## On Apple M1 hardware
@@ -30,7 +30,7 @@ xcode-select --install
 python3 -m pip install -U pip
 python3 -m pip install cmake
 python3 -m pip install scikit-build
-python3 -m pip install pyeoskit
+python3 -m pip install pyamaxkit
 ```
 
 # Code Examples
@@ -99,7 +99,7 @@ eosapi.push_action('eosio.token', 'transfer', args, {'test1':'active'}, indices=
 
 
 
-# [Docs](https://learnforpractice.github.io/pyeoskit/#/MODULES?id=pyeoskit-modules)
+# [Docs](https://learnforpractice.github.io/pyamaxkit/#/MODULES?id=pyeoskit-modules)
 
 # Building from Source Code
 
@@ -130,8 +130,8 @@ cmd -k /path/to/gcc/mingwvars.bat
 ### Downloading Source Code
 
 ```
-git clone https://www.github.com/learnforpractice/pyeoskit
-cd pyeoskit
+git clone https://www.github.com/AMAX-DAO-DEV/pyamaxkit
+cd pyamaxkit
 git submodule update --init --recursive
 ```
 
@@ -153,7 +153,7 @@ python setup.py sdist bdist_wheel
 
 For Windows platform
 ```
-python -m pip uninstall pyeoskit -y;python -m pip install .\dist\pyeoskit-[SUFFIX].whl
+python -m pip uninstall pyamaxkit -y;python -m pip install .\dist\pyamaxkit-[SUFFIX].whl
 ```
 
 ### License

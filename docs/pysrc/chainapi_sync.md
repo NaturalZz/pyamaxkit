@@ -1,6 +1,6 @@
 # Chainapi Sync
 
-> Auto-generated documentation for [pysrc.chainapi_sync](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py) module.
+> Auto-generated documentation for [pysrc.chainapi_sync](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py) module.
 
 - [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Chainapi Sync
     - [ChainApi](#chainapi)
@@ -37,7 +37,7 @@
 
 ## ChainApi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L25)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L25)
 
 ```python
 class ChainApi(RPCInterface, ChainNative):
@@ -46,7 +46,7 @@ class ChainApi(RPCInterface, ChainNative):
 
 ### ChainApi().create_account
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L182)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L182)
 
 ```python
 def create_account(
@@ -64,7 +64,7 @@ def create_account(
 
 ### ChainApi().deploy_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L348)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L348)
 
 ```python
 def deploy_abi(account, abi, indices=None):
@@ -72,7 +72,7 @@ def deploy_abi(account, abi, indices=None):
 
 ### ChainApi().deploy_code
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L337)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L337)
 
 ```python
 def deploy_code(account, code, vm_type=0, vm_version=0):
@@ -80,7 +80,7 @@ def deploy_code(account, code, vm_type=0, vm_version=0):
 
 ### ChainApi().deploy_contract
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L298)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L298)
 
 ```python
 def deploy_contract(
@@ -97,7 +97,7 @@ def deploy_contract(
 
 ### ChainApi().deploy_module
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L415)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L415)
 
 ```python
 def deploy_module(account, module_name, code, deploy_type=1):
@@ -105,7 +105,7 @@ def deploy_module(account, module_name, code, deploy_type=1):
 
 ### ChainApi().deploy_python_code
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L412)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L412)
 
 ```python
 def deploy_python_code(account, code, deploy_type=0):
@@ -113,7 +113,7 @@ def deploy_python_code(account, code, deploy_type=0):
 
 ### ChainApi().deploy_python_contract
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L360)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L360)
 
 ```python
 def deploy_python_contract(account, code, abi, deploy_type=0, indices=None):
@@ -127,7 +127,7 @@ deploy_type (int) : 0 for UUOS network, 1 for EOS network
 
 ### ChainApi().deploy_wasm_contract
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L306)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L306)
 
 ```python
 def deploy_wasm_contract(
@@ -144,7 +144,7 @@ def deploy_wasm_contract(
 
 ### ChainApi().enable_decode
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L32)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L32)
 
 ```python
 def enable_decode(json_format):
@@ -152,7 +152,7 @@ def enable_decode(json_format):
 
 ### ChainApi().exec
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L424)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L424)
 
 ```python
 def exec(account, args, permissions={}):
@@ -160,7 +160,7 @@ def exec(account, args, permissions={}):
 
 ### ChainApi().generate_packed_transaction
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L81)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L81)
 
 ```python
 def generate_packed_transaction(
@@ -175,7 +175,7 @@ def generate_packed_transaction(
 
 ### ChainApi().get_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L276)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L276)
 
 ```python
 def get_abi(account):
@@ -183,7 +183,7 @@ def get_abi(account):
 
 ### ChainApi().get_account
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L171)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L171)
 
 ```python
 def get_account(account):
@@ -191,7 +191,7 @@ def get_account(account):
 
 ### ChainApi().get_balance
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L223)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L223)
 
 ```python
 def get_balance(account, token_account=None, token_name=None):
@@ -199,7 +199,7 @@ def get_balance(account, token_account=None, token_name=None):
 
 ### ChainApi().get_chain_id
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L39)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L39)
 
 ```python
 def get_chain_id():
@@ -207,7 +207,7 @@ def get_chain_id():
 
 ### ChainApi().get_code
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L249)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L249)
 
 ```python
 def get_code(account):
@@ -215,7 +215,7 @@ def get_code(account):
 
 ### ChainApi().get_keys
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L447)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L447)
 
 ```python
 def get_keys(account_name, perm_name):
@@ -223,7 +223,7 @@ def get_keys(account_name, perm_name):
 
 ### ChainApi().get_public_keys
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L441)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L441)
 
 ```python
 def get_public_keys(account_name, perm_name):
@@ -231,7 +231,7 @@ def get_public_keys(account_name, perm_name):
 
 ### ChainApi().get_raw_code
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L262)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L262)
 
 ```python
 def get_raw_code(account):
@@ -239,7 +239,7 @@ def get_raw_code(account):
 
 ### ChainApi().get_required_keys
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L45)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L45)
 
 ```python
 def get_required_keys(trx, public_keys):
@@ -247,7 +247,7 @@ def get_required_keys(trx, public_keys):
 
 ### ChainApi().get_sign_keys
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L49)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L49)
 
 ```python
 def get_sign_keys(actions, pub_keys):
@@ -255,7 +255,7 @@ def get_sign_keys(actions, pub_keys):
 
 ### ChainApi().init
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L35)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L35)
 
 ```python
 def init():
@@ -263,7 +263,7 @@ def init():
 
 ### ChainApi().push_action
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L137)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L137)
 
 ```python
 def push_action(
@@ -279,7 +279,7 @@ def push_action(
 
 ### ChainApi().push_actions
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L143)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L143)
 
 ```python
 def push_actions(actions, expiration=0, compress=0, indices=None):
@@ -287,7 +287,7 @@ def push_actions(actions, expiration=0, compress=0, indices=None):
 
 ### ChainApi().push_transaction
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L42)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L42)
 
 ```python
 def push_transaction(trx: Union[str, dict]):
@@ -295,7 +295,7 @@ def push_transaction(trx: Union[str, dict]):
 
 ### ChainApi().push_transactions
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L155)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L155)
 
 ```python
 def push_transactions(aaa, expiration=60, compress=False, indices=None):
@@ -303,7 +303,7 @@ def push_transactions(aaa, expiration=60, compress=False, indices=None):
 
 ### ChainApi().set_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L272)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L272)
 
 ```python
 def set_abi(account, abi):
@@ -311,7 +311,7 @@ def set_abi(account, abi):
 
 ### ChainApi().set_code
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L269)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L269)
 
 ```python
 def set_code(account, code):
@@ -319,7 +319,7 @@ def set_code(account, code):
 
 ### ChainApi().strip_prefix
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L165)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L165)
 
 ```python
 def strip_prefix(pub_key):
@@ -327,7 +327,7 @@ def strip_prefix(pub_key):
 
 ### ChainApi().transfer
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/chainapi_sync.py#L241)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/chainapi_sync.py#L241)
 
 ```python
 def transfer(

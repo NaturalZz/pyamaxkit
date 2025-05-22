@@ -17,12 +17,12 @@ if platform.system() == 'Windows':
     data.append("pyeoskit.dll")
 
 setup(
-    name="pyeoskit",
+    name="pyamaxkit",
     version="1.1.12",
     description="Python Toolkit for EOS",
     author='learnforpractice',
     license="MIT",
-    url="https://github.com/learnforpractice/pyeoskit",
+    url="https://github.com/AMAX-DAO-DEV/pyamaxkit",
     packages=['pyeoskit'],
     # The extra '/' was *only* added to check that scikit-build can handle it.
     package_dir={'pyeoskit': 'pysrc'},

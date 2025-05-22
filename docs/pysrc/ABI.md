@@ -1,6 +1,6 @@
 # Abi
 
-> Auto-generated documentation for [pysrc.ABI](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/ABI.py) module.
+> Auto-generated documentation for [pysrc.ABI](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/ABI.py) module.
 
 - [Pyeoskit](../README.md#pyeoskit-index) / [Modules](../MODULES.md#pyeoskit-modules) / [Pysrc](index.md#pysrc) / Abi
     - [is_abi_cached](#is_abi_cached)
@@ -14,7 +14,7 @@
 
 ## is_abi_cached
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/ABI.py#L42)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/ABI.py#L42)
 
 ```python
 def is_abi_cached(contractName):
@@ -22,7 +22,7 @@ def is_abi_cached(contractName):
 
 ## pack_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/ABI.py#L45)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/ABI.py#L45)
 
 ```python
 def pack_abi(abi):
@@ -30,7 +30,7 @@ def pack_abi(abi):
 
 ## pack_abi_type
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/ABI.py#L28)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/ABI.py#L28)
 
 ```python
 def pack_abi_type(contractName, actionName, args):
@@ -38,7 +38,7 @@ def pack_abi_type(contractName, actionName, args):
 
 ## pack_action_args
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/ABI.py#L14)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/ABI.py#L14)
 
 ```python
 def pack_action_args(contractName, actionName, args):
@@ -46,7 +46,7 @@ def pack_action_args(contractName, actionName, args):
 
 ## set_contract_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/ABI.py#L7)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/ABI.py#L7)
 
 ```python
 def set_contract_abi(account, abi):
@@ -54,7 +54,7 @@ def set_contract_abi(account, abi):
 
 ## unpack_abi
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/ABI.py#L52)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/ABI.py#L52)
 
 ```python
 def unpack_abi(abi):
@@ -62,7 +62,7 @@ def unpack_abi(abi):
 
 ## unpack_abi_type
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/ABI.py#L35)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/ABI.py#L35)
 
 ```python
 def unpack_abi_type(contractName, actionName, args):
@@ -70,7 +70,7 @@ def unpack_abi_type(contractName, actionName, args):
 
 ## unpack_action_args
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/ABI.py#L21)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/ABI.py#L21)
 
 ```python
 def unpack_action_args(contractName, actionName, args):

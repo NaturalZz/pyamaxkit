@@ -1,6 +1,6 @@
 # Eosbase
 
-> Auto-generated documentation for [pysrc.eosBase](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py) module.
+> Auto-generated documentation for [pysrc.eosBase](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py) module.
 
 /*******************************************************************************
 *   Taras Shchybovyk
@@ -51,7 +51,7 @@
 
 ## Action
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L45)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L45)
 
 ```python
 class Action():
@@ -60,7 +60,7 @@ class Action():
 
 ## Transaction
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L50)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L50)
 
 ```python
 class Transaction():
@@ -69,7 +69,7 @@ class Transaction():
 
 ### Transaction.asset_to_number
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L96)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L96)
 
 ```python
 @staticmethod
@@ -78,7 +78,7 @@ def asset_to_number(asset):
 
 ### Transaction.char_to_symbol
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L54)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L54)
 
 ```python
 @staticmethod
@@ -87,7 +87,7 @@ def char_to_symbol(c):
 
 ### Transaction().encode
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L367)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L367)
 
 ```python
 def encode():
@@ -95,7 +95,7 @@ def encode():
 
 ### Transaction().encode2
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L437)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L437)
 
 ```python
 def encode2():
@@ -103,7 +103,7 @@ def encode2():
 
 ### Transaction.name_to_number
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L62)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L62)
 
 ```python
 @staticmethod
@@ -112,7 +112,7 @@ def name_to_number(name):
 
 ### Transaction.pack_fc_uint
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L139)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L139)
 
 ```python
 @staticmethod
@@ -121,7 +121,7 @@ def pack_fc_uint(value):
 
 ### Transaction.parse
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L289)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L289)
 
 ```python
 @staticmethod
@@ -130,7 +130,7 @@ def parse(json):
 
 ### Transaction.parse_auth
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L213)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L213)
 
 ```python
 @staticmethod
@@ -139,7 +139,7 @@ def parse_auth(data):
 
 ### Transaction.parse_buy_ram
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L184)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L184)
 
 ```python
 @staticmethod
@@ -148,7 +148,7 @@ def parse_buy_ram(data):
 
 ### Transaction.parse_buy_rambytes
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L191)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L191)
 
 ```python
 @staticmethod
@@ -157,7 +157,7 @@ def parse_buy_rambytes(data):
 
 ### Transaction.parse_delegate
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L273)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L273)
 
 ```python
 @staticmethod
@@ -166,7 +166,7 @@ def parse_delegate(data):
 
 ### Transaction.parse_delete_auth
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L240)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L240)
 
 ```python
 @staticmethod
@@ -175,7 +175,7 @@ def parse_delete_auth(data):
 
 ### Transaction.parse_link_auth
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L250)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L250)
 
 ```python
 @staticmethod
@@ -184,7 +184,7 @@ def parse_link_auth(data):
 
 ### Transaction.parse_newaccount
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L265)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L265)
 
 ```python
 @staticmethod
@@ -193,7 +193,7 @@ def parse_newaccount(data):
 
 ### Transaction.parse_public_key
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L204)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L204)
 
 ```python
 @staticmethod
@@ -202,7 +202,7 @@ def parse_public_key(data):
 
 ### Transaction.parse_refund
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L246)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L246)
 
 ```python
 @staticmethod
@@ -211,7 +211,7 @@ def parse_refund(data):
 
 ### Transaction.parse_sell_ram
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L198)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L198)
 
 ```python
 @staticmethod
@@ -220,7 +220,7 @@ def parse_sell_ram(data):
 
 ### Transaction.parse_transfer
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L126)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L126)
 
 ```python
 @staticmethod
@@ -229,7 +229,7 @@ def parse_transfer(data):
 
 ### Transaction.parse_unknown
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L282)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L282)
 
 ```python
 @staticmethod
@@ -238,7 +238,7 @@ def parse_unknown(data):
 
 ### Transaction.parse_unlink_auth
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L258)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L258)
 
 ```python
 @staticmethod
@@ -247,7 +247,7 @@ def parse_unlink_auth(data):
 
 ### Transaction.parse_update_auth
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L232)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L232)
 
 ```python
 @staticmethod
@@ -256,7 +256,7 @@ def parse_update_auth(data):
 
 ### Transaction.parse_vote_producer
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L174)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L174)
 
 ```python
 @staticmethod
@@ -265,7 +265,7 @@ def parse_vote_producer(data):
 
 ### Transaction.symbol_from_string
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L82)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L82)
 
 ```python
 @staticmethod
@@ -274,7 +274,7 @@ def symbol_from_string(p, name):
 
 ### Transaction.symbol_precision
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L92)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L92)
 
 ```python
 @staticmethod
@@ -283,7 +283,7 @@ def symbol_precision(sym):
 
 ### Transaction.unpack_fc_uint
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L154)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L154)
 
 ```python
 @staticmethod
@@ -292,7 +292,7 @@ def unpack_fc_uint(buffer):
 
 ## parse_bip32_path
 
-[[find in source code]](https://github.com/learnforpractice/pyeoskit/blob/master/pysrc/eosBase.py#L32)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/eosBase.py#L32)
 
 ```python
 def parse_bip32_path(path):
