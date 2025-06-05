@@ -31,10 +31,20 @@ if [ "$current" != "$go_target" ]; then
 fi
 
 python_cmd=$(command -v python3 || command -v python)
-"$python_cmd" -m pip install --upgrade build twine scikit-build cython
+"$python_cmd" -m pip install --upgrade build twine scikit-build cython auditwheel
 
 rm -rf dist
 "$python_cmd" -m build
+
+# Convert the wheel to a manylinux2014 compatible wheel
+whl_file=$("$python_cmd" scripts/get_whl_file.py dist)
+(
+  cd dist
+  "$python_cmd" -m auditwheel repair "${whl_file}" --plat manylinux2014_x86_64
+  mv wheelhouse/*.whl .
+  rm -r wheelhouse
+  rm "${whl_file}"
+)
 
 upload=(twine upload --repository "$repo")
 if [ -n "$token" ]; then
