@@ -1,7 +1,7 @@
 #asyncio example
 import asyncio
-from pyeoskit import wallet
-from pyeoskit.chainapi import ChainApiAsync
+from pyamaxkit import wallet
+from pyamaxkit.chainapi import ChainApiAsync
 
 #import your account private key here
 #wallet.import_key('mywallet', '')

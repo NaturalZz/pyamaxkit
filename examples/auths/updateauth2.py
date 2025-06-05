@@ -1,6 +1,6 @@
 #add eosio.code permission to account example
 
-from pyeoskit import eosapi, wallet
+from pyamaxkit import eosapi, wallet
 eosapi.set_node('https://api.eosn.io')
 
 #import your account private key here

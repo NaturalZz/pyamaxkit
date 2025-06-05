@@ -21,7 +21,7 @@ python -m pip install pyamaxkit
 
 ## On Apple M1 hardware
 
-pyeoskit does not have pre-built versions available for ARM chips. in order to build it from source code, you need to install `cmake`, `go`, `scikit-build`, `cython`.
+pyamaxkit does not have pre-built versions available for ARM chips. In order to build it from source code, you need to install `cmake`, `go`, `scikit-build`, `cython`.
 
 ```bash
 brew install go
@@ -38,7 +38,7 @@ python3 -m pip install pyamaxkit
 ## Example1
 ```python
 import os
-from pyeoskit import eosapi, wallet
+from pyamaxkit import eosapi, wallet
 #import your account private key here
 wallet.import_key('mywallet', '5K463ynhZoCDDa4RDcr63cUwWLTnKqmdcoTKTHBjqoKfv4u5V7p')
 
@@ -58,8 +58,8 @@ eosapi.push_action('eosio.token', 'transfer', args, {'test1':'active'})
 ```python
 import os
 import asyncio
-from pyeoskit import wallet
-from pyeoskit.chainapi import ChainApiAsync
+from pyamaxkit import wallet
+from pyamaxkit.chainapi import ChainApiAsync
 
 #import your account private key here
 wallet.import_key('mywallet', '5K463ynhZoCDDa4RDcr63cUwWLTnKqmdcoTKTHBjqoKfv4u5V7p')
@@ -83,7 +83,7 @@ asyncio.run(test())
 ## Sign With Ledger Hardware Wallet Example
 ```python
 import os
-from pyeoskit import eosapi
+from pyamaxkit import eosapi
 eosapi.set_node('https://eos.greymass.com')
 args = {
     'from': 'test1',
