@@ -160,10 +160,11 @@ python -m pip uninstall pyamaxkit -y;python -m pip install .\dist\pyamaxkit-[SUF
 ### Publishing to PyPI
 
 Use the helper script to build and upload the package. Set `PYPI_TOKEN` with your
-API token and optionally `PYPI_REPOSITORY` (defaults to `pypi`).
+API token and optionally `PYPI_REPOSITORY` (defaults to `pypi`). The script
+installs build requirements such as `scikit-build` and `Cython` automatically.
 
 ```bash
-python scripts/publish_pypi.py
+python3 scripts/publish_pypi.py
 ```
 
 ### License
