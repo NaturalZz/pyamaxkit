@@ -4,8 +4,8 @@ import time
 import pytest
 import logging
 import hashlib
-from pyeoskit import eosapi, config, wallet
-from pyeoskit.exceptions import ChainException, WalletException
+from pyamaxkit import eosapi, config, wallet
+from pyamaxkit.exceptions import ChainException, WalletException
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(lineno)d %(module)s %(message)s')
 logger=logging.getLogger(__name__)

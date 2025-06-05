@@ -1,5 +1,5 @@
-from pyeoskit import eosapi
-from pyeoskit import wallet
+from pyamaxkit import eosapi
+from pyamaxkit import wallet
 
 if os.path.exists('mywallet.wallet'):
     os.remove('mywallet.wallet')

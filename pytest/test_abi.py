@@ -1,4 +1,4 @@
-from pyeoskit import eosapi
+from pyamaxkit import eosapi
 def test_pack_unpack_array():
     abi = '''
     {
