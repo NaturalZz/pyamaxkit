@@ -42,16 +42,16 @@ from pyamaxkit import amaxapi, wallet
 #import your account private key here
 wallet.import_key('mywallet', '5K463ynhZoCDDa4RDcr63cUwWLTnKqmdcoTKTHBjqoKfv4u5V7p')
 
-amaxapi.set_node('https://eos.greymass.com')
+amaxapi.set_node('https://chain.amaxtest.com')
 info = amaxapi.get_info()
 print(info)
 args = {
     'from': 'test1',
     'to': 'test2',
-    'quantity': '1.0000 EOS',
-    'memo': 'hello,world'
+    'quantity': '1.00000000 AMAX',
+    'memo': 'hello world'
 }
-amaxapi.push_action('eosio.token', 'transfer', args, {'test1':'active'})
+amaxapi.push_action('amax.token', 'transfer', args, {'test1':'active'})
 ```
 
 ## Async Example
@@ -65,16 +65,16 @@ from pyamaxkit.chainapi import ChainApiAsync
 wallet.import_key('mywallet', '5K463ynhZoCDDa4RDcr63cUwWLTnKqmdcoTKTHBjqoKfv4u5V7p')
 
 async def test():
-    amaxapi = ChainApiAsync('https://eos.greymass.com')
+    amaxapi = ChainApiAsync('https://chain.amaxtest.com')
     info = await amaxapi.get_info()
     print(info)
     args = {
         'from': 'test1',
         'to': 'test2',
-        'quantity': '1.0000 EOS',
-        'memo': 'hello,world'
+        'quantity': '1.00000000 AMAX',
+        'memo': 'hello world'
     }
-    r = await amaxapi.push_action('eosio.token', 'transfer', args, {'test1':'active'})
+    r = await amaxapi.push_action('amax.token', 'transfer', args, {'test1':'active'})
     print(r)
 
 asyncio.run(test())
@@ -84,22 +84,22 @@ asyncio.run(test())
 ```python
 import os
 from pyamaxkit import amaxapi
-amaxapi.set_node('https://eos.greymass.com')
+amaxapi.set_node('https://chain.amaxtest.com')
 args = {
     'from': 'test1',
     'to': 'test2',
-    'quantity': '1.0000 EOS',
-    'memo': 'hello,world'
+    'quantity': '1.00000000 AMAX',
+    'memo': 'hello world'
 }
 
 #indices is an array of ledger signing key indices
-amaxapi.push_action('eosio.token', 'transfer', args, {'test1':'active'}, indices=[0])
+amaxapi.push_action('amax.token', 'transfer', args, {'test1':'active'}, indices=[0])
 ```
 
 
 
 
-# [Docs](https://learnforpractice.github.io/pyamaxkit/#/MODULES?id=pyeoskit-modules)
+# [Docs](https://github.com/AMAX-DAO-DEV/pyamaxkit/#/MODULES?id=pyeoskit-modules)
 
 # Building from Source Code
 
