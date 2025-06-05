@@ -12,6 +12,7 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
+from shutil import which
 
 
 def run(cmd):
@@ -20,6 +21,11 @@ def run(cmd):
 
 
 def main():
+    if which("go") is None:
+        raise RuntimeError(
+            "Go compiler not found. Install it and ensure 'go' is in your PATH."
+        )
+
     # Ensure required tools are available
     # Use the current Python interpreter to ensure the ``python`` command
     # exists in environments where only ``python3`` is available.
