@@ -159,7 +159,7 @@ class ChainApiAsync(RPCInterface, ChainNative):
             signatures = set()
             sign_keys = required_keys & set(local_wallet_pub_keys)
             for key in sign_keys:
-                signatures.add(tx.sign(key))
+                signatures.add(tx.sign(wallet._to_eos_prefix(key)))
 
             packed_tx = tx.pack(compress, False)
             sign_keys = required_keys & set(ledger_pub_keys)
