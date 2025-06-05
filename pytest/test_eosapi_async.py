@@ -5,11 +5,11 @@ import json
 import pytest
 import logging
 import hashlib
-from pyeoskit import config, wallet
-from pyeoskit.chainapi import ChainApiAsync
-from pyeoskit.exceptions import ChainException, WalletException
+from pyamaxkit import config, wallet
+from pyamaxkit.chainapi import ChainApiAsync
+from pyamaxkit.exceptions import ChainException, WalletException
 
-from pyeoskit.testnet import Testnet
+from pyamaxkit.testnet import Testnet
 
 
 

@@ -6,20 +6,20 @@ import pytest
 import logging
 import hashlib
 
-from pyeoskit import ABI, _pyeoskit
+from pyamaxkit import ABI, _pyeoskit
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(lineno)d %(module)s %(message)s')
 logger=logging.getLogger(__name__)
 test_dir = os.path.dirname(__file__)
 
 
-from pyeoskit.chainapi import ChainApi
+from pyamaxkit.chainapi import ChainApi
 
 class Test(object):
 
     @classmethod
     def setup_class(cls):
-        from pyeoskit import _pyeoskit
+        from pyamaxkit import _pyeoskit
         _pyeoskit.init()
         cls.chain_index = _pyeoskit.new_chain_context()
 
@@ -101,12 +101,12 @@ class Test(object):
         logger.info(r)
 
     def test_debug(self):
-        from pyeoskit import _pyeoskit
+        from pyamaxkit import _pyeoskit
         _pyeoskit.set_debug_flag(False)
         assert _pyeoskit.get_debug_flag() == False
 
     def test_bad_abi(self):
-        from pyeoskit import _pyeoskit
+        from pyamaxkit import _pyeoskit
         #_pyeoskit.set_debug_flag(False)
         with pytest.raises(Exception) as e_info:
             abi = '{\n    "version": "eosio::abi/1.1",\n '
@@ -187,7 +187,7 @@ class Test(object):
         logger.info(unpacked_abi)
 
     def test_wallet(self):
-        from pyeoskit import wallet, eosapi
+        from pyamaxkit import wallet, eosapi
         h = hashlib.sha256(b'123').hexdigest()
 
         priv = '5JRYimgLBrRLCBAcjHUWCYRv3asNedTYYzVgmiU4q2ZVxMBiJXL'

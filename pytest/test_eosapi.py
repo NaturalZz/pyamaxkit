@@ -5,11 +5,11 @@ import json
 import pytest
 import logging
 import hashlib
-from pyeoskit import eosapi, config, wallet
-from pyeoskit.chainapi import ChainApiAsync
-from pyeoskit.exceptions import ChainException, WalletException
+from pyamaxkit import eosapi, config, wallet
+from pyamaxkit.chainapi import ChainApiAsync
+from pyamaxkit.exceptions import ChainException, WalletException
 
-from pyeoskit.testnet import Testnet
+from pyamaxkit.testnet import Testnet
 Testnet.__test__ = False
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(lineno)d %(module)s %(message)s')
@@ -254,7 +254,7 @@ def apply(a, b, c):
 
     @pytest.mark.asyncio
     async def test_pack_unpack_args(self):
-        from pyeoskit import ABI
+        from pyamaxkit import ABI
         args = {
             'from': 'test1',
             'to': 'test2',
@@ -365,7 +365,7 @@ def apply(a, b, c):
     def test_pack_tx(self):
         tx = {"expiration":"1980-01-01T00:01:00","ref_block_num":8,"ref_block_prefix":584400311,"max_net_usage_words":0,"max_cpu_usage_ms":0,"delay_sec":0,"context_free_actions":[],"actions":[{"account":"eosio.token","name":"transfer","authorization":[{"actor":"helloworld11","permission":"active"}],"data":"10428a97721aa36a0000000000ea3055e80300000000000004454f53000000000b68656c6c6f2c776f726c64"},{"account":"eosio.token","name":"transfer","authorization":[{"actor":"helloworld11","permission":"active"}],"data":"10428a97721aa36a0000000000ea3055d00700000000000004454f53000000000b68656c6c6f2c776f726c64"}],"transaction_extensions":[]}
         tx = json.dumps(tx)
-        from pyeoskit import transaction
+        from pyamaxkit import transaction
         t = transaction.Transaction(eosapi.chain_index)
         t.from_json(tx)
         t.free()
@@ -405,7 +405,7 @@ def apply(a, b, c):
         assert tx
 
     def test_sign_tx(self):
-        from pyeoskit.transaction import Transaction
+        from pyamaxkit.transaction import Transaction
         tx = self.gen_tx()
         logger.info(tx)
         t = Transaction.from_json(tx)
@@ -415,7 +415,7 @@ def apply(a, b, c):
         logger.info(t.pack())
 
     def test_unpack_tx(self):
-        from pyeoskit.transaction import Transaction
+        from pyamaxkit.transaction import Transaction
         tx = self.gen_tx()
         logger.info(tx)
         t = Transaction.from_json(tx)
@@ -428,8 +428,8 @@ def apply(a, b, c):
         logger.info(tx)
 
     def test_wallet_sign(self):
-        from pyeoskit.transaction import Transaction
-        from pyeoskit import wallet
+        from pyamaxkit.transaction import Transaction
+        from pyamaxkit import wallet
         tx = self.gen_tx()
         pubs = ['EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV']
         tx = wallet.sign_transaction(tx, pubs, self.chain_id)

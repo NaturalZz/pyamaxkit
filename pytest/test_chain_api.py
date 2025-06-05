@@ -1,4 +1,4 @@
-from pyeoskit import eosapi
+from pyamaxkit import eosapi
 
 info = eosapi.get_info()
 

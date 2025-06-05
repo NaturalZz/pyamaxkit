@@ -3,14 +3,14 @@ import sys
 import time
 import pytest
 import logging
-from pyeoskit import _pyeoskit
+from pyamaxkit import _pyeoskit
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(lineno)d %(module)s %(message)s')
 logger=logging.getLogger(__name__)
 test_dir = os.path.dirname(__file__)
 
 
-from pyeoskit.chainapi import ChainApi
+from pyamaxkit.chainapi import ChainApi
 
 class Test(object):
 
@@ -36,7 +36,7 @@ class Test(object):
     def test_api(self):
         assert(_pyeoskit.n2s(_pyeoskit.s2n('zzzzzzzzzzzzj')) == 'zzzzzzzzzzzzj')
         assert _pyeoskit.n2sym((_pyeoskit.sym2n('EOS', 4))) == '4,EOS'
-        from pyeoskit.chainnative import ChainNative
+        from pyamaxkit.chainnative import ChainNative
         c = ChainNative()
         n = c.string_to_symbol('4,EOS')
         assert '4,EOS' == _pyeoskit.n2sym(n)
