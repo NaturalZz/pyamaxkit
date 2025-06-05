@@ -38,12 +38,12 @@ python3 -m pip install pyamaxkit
 ## Example1
 ```python
 import os
-from pyamaxkit import eosapi, wallet
+from pyamaxkit import amaxapi, wallet
 #import your account private key here
 wallet.import_key('mywallet', '5K463ynhZoCDDa4RDcr63cUwWLTnKqmdcoTKTHBjqoKfv4u5V7p')
 
-eosapi.set_node('https://eos.greymass.com')
-info = eosapi.get_info()
+amaxapi.set_node('https://eos.greymass.com')
+info = amaxapi.get_info()
 print(info)
 args = {
     'from': 'test1',
@@ -51,7 +51,7 @@ args = {
     'quantity': '1.0000 EOS',
     'memo': 'hello,world'
 }
-eosapi.push_action('eosio.token', 'transfer', args, {'test1':'active'})
+amaxapi.push_action('eosio.token', 'transfer', args, {'test1':'active'})
 ```
 
 ## Async Example
@@ -65,8 +65,8 @@ from pyamaxkit.chainapi import ChainApiAsync
 wallet.import_key('mywallet', '5K463ynhZoCDDa4RDcr63cUwWLTnKqmdcoTKTHBjqoKfv4u5V7p')
 
 async def test():
-    eosapi = ChainApiAsync('https://eos.greymass.com')
-    info = await eosapi.get_info()
+    amaxapi = ChainApiAsync('https://eos.greymass.com')
+    info = await amaxapi.get_info()
     print(info)
     args = {
         'from': 'test1',
@@ -74,7 +74,7 @@ async def test():
         'quantity': '1.0000 EOS',
         'memo': 'hello,world'
     }
-    r = await eosapi.push_action('eosio.token', 'transfer', args, {'test1':'active'})
+    r = await amaxapi.push_action('eosio.token', 'transfer', args, {'test1':'active'})
     print(r)
 
 asyncio.run(test())
@@ -83,8 +83,8 @@ asyncio.run(test())
 ## Sign With Ledger Hardware Wallet Example
 ```python
 import os
-from pyamaxkit import eosapi
-eosapi.set_node('https://eos.greymass.com')
+from pyamaxkit import amaxapi
+amaxapi.set_node('https://eos.greymass.com')
 args = {
     'from': 'test1',
     'to': 'test2',
@@ -93,7 +93,7 @@ args = {
 }
 
 #indices is an array of ledger signing key indices
-eosapi.push_action('eosio.token', 'transfer', args, {'test1':'active'}, indices=[0])
+amaxapi.push_action('eosio.token', 'transfer', args, {'test1':'active'}, indices=[0])
 ```
 
 

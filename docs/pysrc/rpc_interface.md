@@ -391,7 +391,7 @@ def get_producer_schedule() -> dict:
 def get_producers(json, lower_bound, limit) -> dict:
 ```
 
-Example: eosapi.get_producers(True, "", 100)
+Example: amaxapi.get_producers(True, "", 100)
 
 ### RPCInterface().get_raw_abi
 

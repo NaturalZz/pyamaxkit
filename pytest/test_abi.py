@@ -1,4 +1,4 @@
-from pyamaxkit import eosapi
+from pyamaxkit import amaxapi
 def test_pack_unpack_array():
     abi = '''
     {
@@ -22,11 +22,11 @@ def test_pack_unpack_array():
     ]
     }
     '''
-    eosapi.set_abi('test', abi)
+    amaxapi.set_abi('test', abi)
 
     args = {'worlds': ['hello', 'world']}
-    packed_args = eosapi.pack_args('test', 'sayhello', args)
+    packed_args = amaxapi.pack_args('test', 'sayhello', args)
     assert packed_args == b'\x02\x05hello\x05world'
 
-    args = eosapi.unpack_args('test', 'sayhello', packed_args.hex())
+    args = amaxapi.unpack_args('test', 'sayhello', packed_args.hex())
     assert args == {"worlds":["hello","world"]}

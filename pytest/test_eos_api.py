@@ -11,7 +11,7 @@ test_dir = os.path.dirname(__file__)
 
 
 from pyamaxkit.chainapi import ChainApi, ChainApiAsync
-from pyamaxkit import eosapi, wallet, config
+from pyamaxkit import amaxapi, wallet, config
 
 @pytest.fixture
 def event_loop():
@@ -66,9 +66,9 @@ class Test(object):
         psw = wallet.create('test')
         wallet.import_key('test', '5Jbb4wuwz8MAzTB9FJNmrVYGXo4ABb7wqPVoWGcZ6x8V2FwNeDo')
 
-        #eosapi.set_nodes(['https://nodes.uuos.network:8443'])
-        eosapi.set_node('http://127.0.0.1:8888')
-        eosapi.db.reset()
+        #amaxapi.set_nodes(['https://nodes.uuos.network:8443'])
+        amaxapi.set_node('http://127.0.0.1:8888')
+        amaxapi.db.reset()
 
         account_name = 'helloworld11'
 
@@ -76,8 +76,8 @@ class Test(object):
 def apply(receiver, code, action):
     print('hello,worldd')
 '''
-        code = eosapi.compile(account_name, code, 1)
-        r = eosapi.deploy_contract(account_name, code, g_abi, 1)
+        code = amaxapi.compile(account_name, code, 1)
+        r = amaxapi.deploy_contract(account_name, code, g_abi, 1)
         print('done!')
 
     def test_set_contract_async(self):
@@ -87,7 +87,7 @@ def apply(receiver, code, action):
             psw = wallet.create('test')
             wallet.import_key('test', '5Jbb4wuwz8MAzTB9FJNmrVYGXo4ABb7wqPVoWGcZ6x8V2FwNeDo')
 
-            #eosapi.set_nodes(['https://nodes.uuos.network:8443'])
+            #amaxapi.set_nodes(['https://nodes.uuos.network:8443'])
             api = ChainApiAsync('http://127.0.0.1:8888', 'UUOS')
             account_name = 'helloworld11'
 

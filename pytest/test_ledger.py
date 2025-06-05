@@ -4,7 +4,7 @@ import time
 import pytest
 import logging
 import hashlib
-from pyamaxkit import eosapi, config, wallet
+from pyamaxkit import amaxapi, config, wallet
 from pyamaxkit.exceptions import ChainException, WalletException
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(lineno)d %(module)s %(message)s')
@@ -28,14 +28,14 @@ class Test(object):
         pass
 
     def test_1sign_transaction(self):
-        eosapi.set_node('http://127.0.0.1:9000')
+        amaxapi.set_node('http://127.0.0.1:9000')
         args = {
             'from': 'helloworld11',
             'to': 'b',
             'quantity': '1.0000 EOS',
             'memo': 'hello'
         }
-        eosapi.push_action('eosio.token', 'transfer', args, {'helloworld11': 'active'}, indices=[0])
+        amaxapi.push_action('eosio.token', 'transfer', args, {'helloworld11': 'active'}, indices=[0])
 
     def test_2ledger(self):
         from pyamaxkit import ledger

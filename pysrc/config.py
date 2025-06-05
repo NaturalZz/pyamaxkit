@@ -24,7 +24,7 @@ nodes = []
 def set_nodes(_nodes):
     global nodes
     nodes = _nodes
-#set in eosapi.py:eosapi.__init__
+# set in __init__.py: amaxapi.__init__
 
 main_token = 'EOS'
 public_key_prefix = 'AM'
@@ -39,8 +39,8 @@ def set_public_key_prefix(prefix: str):
     global public_key_prefix
     public_key_prefix = prefix
     try:
-        from pyeoskit import eosapi
-        eosapi.set_public_key_prefix(prefix)
+        from pyeoskit import amaxapi
+        amaxapi.set_public_key_prefix(prefix)
     except Exception:
         pass
 

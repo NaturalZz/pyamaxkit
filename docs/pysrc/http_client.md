@@ -33,7 +33,7 @@ This class serves as an abstraction layer for underlying HTTP requests.
 
 - `..` *code-block:* - python
 
-from eosapi.http_client import HttpClient
+from amaxapi.http_client import HttpClient
 rpc = HttpClient(['https://eosnode.com'])
 
 any call available to that port can be issued using the instance

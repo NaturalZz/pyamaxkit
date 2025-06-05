@@ -49,8 +49,8 @@ class ChainNative(object):
         '''convert integer to name string
         Example:
         ```python
-            from pyeoskit import eosapi
-            s = eosapi.n2s(10927537166380695552)
+            from pyeoskit import amaxapi
+            s = amaxapi.n2s(10927537166380695552)
             print(s)
         ```
         ```

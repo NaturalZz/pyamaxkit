@@ -7,8 +7,8 @@ from pyamaxkit.chainapi import ChainApiAsync
 #wallet.import_key('mywallet', '')
 
 async def test():
-    eosapi = ChainApiAsync('https://api.eosn.io')
-    info = await eosapi.get_info()
+    amaxapi = ChainApiAsync('https://api.eosn.io')
+    info = await amaxapi.get_info()
     print(info)
     args = {
         'from': 'test1',
@@ -16,7 +16,7 @@ async def test():
         'quantity': '1.0000 EOS',
         'memo': 'hello,world'
     }
-    r = await eosapi.push_action('eosio.token', 'transfer', args, {'test1':'active'})
+    r = await amaxapi.push_action('eosio.token', 'transfer', args, {'test1':'active'})
     print(r)
 
 asyncio.run(test())

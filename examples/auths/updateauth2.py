@@ -1,7 +1,7 @@
 #add eosio.code permission to account example
 
-from pyamaxkit import eosapi, wallet
-eosapi.set_node('https://api.eosn.io')
+from pyamaxkit import amaxapi, wallet
+amaxapi.set_node('https://api.eosn.io')
 
 #import your account private key here
 wallet.import_key('mywallet', '5K463ynhZoCDDa4RDcr63cUwWLTnKqmdcoTKTHBjqoKfv4u5V7p')
@@ -32,4 +32,4 @@ args = {
     }
 }
 
-eosapi.push_action('eosio', 'updateauth', args, {account: 'active'})
+amaxapi.push_action('eosio', 'updateauth', args, {account: 'active'})
