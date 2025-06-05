@@ -1,4 +1,4 @@
-Python Toolkit for EOS
+Python Toolkit for AMAX
 
 [![PyPi](https://img.shields.io/pypi/v/pyamaxkit.svg)](https://pypi.org/project/pyamaxkit)
 [![PyPi](https://img.shields.io/pypi/dm/pyamaxkit.svg)](https://pypi.org/project/pyamaxkit)
