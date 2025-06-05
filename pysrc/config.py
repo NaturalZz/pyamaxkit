@@ -27,7 +27,7 @@ def set_nodes(_nodes):
 #set in eosapi.py:eosapi.__init__
 
 main_token = 'EOS'
-public_key_prefix = 'EOS'
+public_key_prefix = 'AM'
 system_contract = 'eosio'
 main_token_contract = 'eosio.token'
 python_contract = 'uuoscontract'
@@ -70,7 +70,7 @@ def setup_eos_network():
     main_token_contract = 'eosio.token'
     network_url = 'https://api.eosn.io'
     code_permission_name = 'eosio.code'
-    set_public_key_prefix('EOS')
+    set_public_key_prefix('AM')
 
 def setup_eos_test_network(url = 'https://api.testnet.eos.io', deploy_type=1):
     global main_token
@@ -92,7 +92,7 @@ def setup_eos_test_network(url = 'https://api.testnet.eos.io', deploy_type=1):
     main_token_contract = 'eosio.token'
     python_contract = 'ceyelqpjeeia'
     code_permission_name = 'eosio.code'
-    set_public_key_prefix('EOS')
+    set_public_key_prefix('AM')
 
     if os.path.exists('test.wallet'):
         os.remove('test.wallet')
