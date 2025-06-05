@@ -156,5 +156,15 @@ For Windows platform
 python -m pip uninstall pyamaxkit -y;python -m pip install .\dist\pyamaxkit-[SUFFIX].whl
 ```
 
+
+### Publishing to PyPI
+
+Use the helper script to build and upload the package. Set `PYPI_TOKEN` with your
+API token and optionally `PYPI_REPOSITORY` (defaults to `pypi`).
+
+```bash
+python scripts/publish_pypi.py
+```
+
 ### License
 [MIT](./LICENSE)
