@@ -1,111 +1,17 @@
-from pyamaxkit import amaxapi
 
+from pyamaxkit import amaxapi, wallet, config
+wallet.import_key('amaxpykitwlt', '5JGgqHGvDtW4a1ERkS5stRJNWfyKHw5mi2hkGyTMjMKX36ow9Ym')
+
+print(wallet.get_public_keys())
+
+amaxapi.set_node('https://chain.amaxtest.com')
 info = amaxapi.get_info()
-
-info = amaxapi.get_info()
 print(info)
 
-block = amaxapi.get_block(1)
-print(block)
-
-
-# state = amaxapi.get_block_header_state(info['last_irreversible_block_num'])
-# print(state)
-
-contract_name = 'hello'
-
-account = amaxapi.get_account(contract_name)
-print(account)
-
-code = amaxapi.get_code(contract_name)
-print(code)
-
-abi = amaxapi.get_abi(contract_name)
-print(abi)
-
-abi = amaxapi.get_raw_code_and_abi(contract_name)
-print(abi)
-
-abi = amaxapi.get_raw_abi(contract_name)
-print(abi)
-
-info = amaxapi.get_producers(True, 0)
-print(info)
-
-info = amaxapi.get_producer_schedule()
-print(info)
-
-args = {"from": config.system_contract,
-        "to": contract_name,
-        "quantity": '0.0001 EOS',
-        "memo": 'hello,world'
+args = {
+    'from': 'amaxpykitwlt',
+    'to': 'solotestacct',
+    'quantity': '0.00010000 AMAX',
+    'memo': 'hello,world'
 }
-
-r = amaxapi.abi_json_to_bin(config.main_token_contract, 'transfer', args)
-print(r)
-binargs = '0000000000ea305500000000001aa36a010000000000000004454f53000000000b68656c6c6f2c776f726c64'
-amaxapi.abi_bin_to_json(config.main_token_contract, 'transfer', binargs)
-
-abi = '''
-{
-    "version": "eosio::abi/1.0",
-    "types": [{
-        "new_type_name": "account_name",
-        "type": "name"
-    }],
-    "structs": [{
-        "name": "transfer",
-        "base": "",
-        "fields": [
-        {"name":"from", "type":"account_name"},
-        {"name":"to", "type":"account_name"},
-        {"name":"quantity", "type":"asset"},
-        {"name":"memo", "type":"string"}
-        ]
-    }
-    ],
-    "actions": [{
-        "name": "transfer",
-        "type": "transfer",
-        "ricardian_contract": ""
-    }],
-    "tables": [],
-    "ricardian_clauses": [],
-    "abi_extensions": []
-}
-'''
-
-amaxapi.set_abi(config.main_token_contract, abi)
-
-args = {"from": config.system_contract,
-        "to": contract_name,
-        "quantity": '0.0001 EOS',
-        "memo": 'hello,world'
-}
-
-r = amaxapi.pack_args(abi, 'transfer', args)
-print(r)
-
-args = {"from": contract_name,
-        "to": config.system_contract,
-        "quantity": '0.0001 EOS',
-        "memo": 'hello,world'
-}
-action = [config.main_token_contract, 'transfer', args, {contract_name:'active'}]
-
-info = amaxapi.get_info()
-reference_block_id = info['last_irreversible_block_id']
-trx = amaxapi.generate_transaction([action], 60, reference_block_id)
-print(trx)
-
-trx = amaxapi.sign_transaction(trx, '5JbDP55GXN7MLcNYKCnJtfKi9aD2HvHAdY7g8m67zFTAFkY1uBB', info.chain_id)
-print(trx)
-
-trx = amaxapi.pack_transaction(trx, 0)
-print(trx)
-amaxapi.push_transaction(trx)
-
-info = amaxapi.get_code(contract_name)
-print(info)
-
-
+amaxapi.push_action('amax.token', 'transfer', args, {'amaxpykitwlt':'active'})

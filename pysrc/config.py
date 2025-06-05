@@ -1,24 +1,11 @@
 default_nodes = [
-'https://public.eosinfra.io',
-'https://mainnet.eoscalgary.io',
-'https://api.eosnewyork.io',
-'https://api.eosdetroit.io',
-'http://api.hkeos.com',
-'https://bp.cryptolions.io',
-'http://dc1.eosemerge.io:8888',
-'https://dc1.eosemerge.io:5443',
-'https://api1.eosdublin.io',
-'https://api2.eosdublin.io',
-'https://mainnet.eoscannon.io',
-'https://eos-api.privex.io',
-'https://eosapi.blockmatrix.network',
-'https://user-api.eoseoul.io',
-'https://api.eos.bitspace.no',
-'https://node.eosflare.io',
-'https://api-eos.blckchnd.com',
-'https://mainnet.eosimpera.com',
-'https://api.eosn.io',
+'https://expnode.armonia.fund',
+'https://vmaxmall.amaxscan.io',
+'https://aplink.armonia.fund',
+'https://cosmosdao.amaxscan.io',
+'https://amgenesisdao.amaxscan.io'
 ]
+
 
 nodes = []
 def set_nodes(_nodes):
@@ -26,10 +13,10 @@ def set_nodes(_nodes):
     nodes = _nodes
 # set in __init__.py: amaxapi.__init__
 
-main_token = 'EOS'
+main_token = 'AMAX'
 public_key_prefix = 'AM'
-system_contract = 'eosio'
-main_token_contract = 'eosio.token'
+system_contract = 'amax'
+main_token_contract = 'amax.token'
 python_contract = 'uuoscontract'
 contract_deploy_type = 0
 network_url = ''
@@ -44,9 +31,9 @@ def set_public_key_prefix(prefix: str):
     except Exception:
         pass
 
-code_permission_name = 'eosio.code'
+code_permission_name = 'amax.code'
 
-network = 'EOS_TESTNET'
+network = 'AMAX_TESTNET'
 
 def config_network(_system_contract, _main_token_contract, _main_token):
     global system_contract
@@ -65,14 +52,14 @@ def setup_eos_network():
     global code_permission_name
     global network_url
 
-    main_token = 'EOS'
-    system_contract = 'eosio'
-    main_token_contract = 'eosio.token'
-    network_url = 'https://api.eosn.io'
-    code_permission_name = 'eosio.code'
+    main_token = 'AMAX'
+    system_contract = 'amax'
+    main_token_contract = 'amax.token'
+    network_url = 'https://chain.amaxtest.com'
+    code_permission_name = 'amax.code'
     set_public_key_prefix('AM')
 
-def setup_eos_test_network(url = 'https://api.testnet.eos.io', deploy_type=1):
+def setup_eos_test_network(url = 'https://chain.amaxtest.com', deploy_type=1):
     global main_token
     global system_contract
     global main_token_contract
@@ -87,11 +74,11 @@ def setup_eos_test_network(url = 'https://api.testnet.eos.io', deploy_type=1):
     contract_deploy_type = deploy_type
     network_url = url
 
-    main_token = 'TNT'
-    system_contract = 'eosio'
-    main_token_contract = 'eosio.token'
+    main_token = 'AMAX'
+    system_contract = 'amax'
+    main_token_contract = 'amax.token'
     python_contract = 'ceyelqpjeeia'
-    code_permission_name = 'eosio.code'
+    code_permission_name = 'amax.code'
     set_public_key_prefix('AM')
 
     if os.path.exists('test.wallet'):
@@ -99,10 +86,3 @@ def setup_eos_test_network(url = 'https://api.testnet.eos.io', deploy_type=1):
     wallet.create('test')
     # import active key for hello
     wallet.import_key('test', '5JRYimgLBrRLCBAcjHUWCYRv3asNedTYYzVgmiU4q2ZVxMBiJXL')
-    # import active key for helloworld11
-    wallet.import_key('test', '5Jbb4wuwz8MAzTB9FJNmrVYGXo4ABb7wqPVoWGcZ6x8V2FwNeDo')
-    # active key of ceyelqpjeeia
-    wallet.import_key('test', '5JfZz1kXF8TXsxQgwfsvZCUBeTQefYSsCLDSbSPmnbKQfFmtBny')
-
-    # active key of ebvjmdibybgq
-    wallet.import_key('test', '5KiVDjfHMHXzxrcLqZxGENrhCcCXBMSXP7paPbJWiMCDRMbStsF')
