@@ -23,7 +23,9 @@ def main():
     # Ensure required tools are available
     # Use the current Python interpreter to ensure the ``python`` command
     # exists in environments where only ``python3`` is available.
-    run(f"{sys.executable} -m pip install --upgrade build twine")
+    run(
+        f"{sys.executable} -m pip install --upgrade build twine scikit-build cython"
+    )
 
     dist_dir = Path("dist")
     if dist_dir.exists():
