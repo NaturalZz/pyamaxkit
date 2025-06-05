@@ -187,18 +187,18 @@ class Test(object):
         logger.info(unpacked_abi)
 
     def test_wallet(self):
-        from pyamaxkit import wallet, eosapi
+        from pyamaxkit import wallet, amaxapi
         h = hashlib.sha256(b'123').hexdigest()
 
         priv = '5JRYimgLBrRLCBAcjHUWCYRv3asNedTYYzVgmiU4q2ZVxMBiJXL'
         wallet.import_key('test', priv)
-        pub = eosapi.get_public_key(priv)
+        pub = amaxapi.get_public_key(priv)
         sign = wallet.sign_digest(h, pub)
 
-        sign2 = eosapi.sign_digest(h, priv)
+        sign2 = amaxapi.sign_digest(h, priv)
         assert sign == sign2
 
-        pub2 = eosapi.recover_key(h, sign)
+        pub2 = amaxapi.recover_key(h, sign)
         assert sign == sign2
 
     def test_optional(self):

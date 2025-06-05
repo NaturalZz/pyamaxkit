@@ -1,6 +1,6 @@
 #multisig example
 
-from pyamaxkit import eosapi, wallet
+from pyamaxkit import amaxapi, wallet
 #account to update authorization
 account = 'testaccount'
 #new permission key to add
@@ -11,9 +11,9 @@ proposer = 'proposer'
 #import your account private key here
 # wallet.import_key('mywallet', '')
 
-eosapi.set_node('https://api.eosn.io')
+amaxapi.set_node('https://api.eosn.io')
 
-info = eosapi.get_info()
+info = amaxapi.get_info()
 chain_id = info['chain_id']
 ref_block = info['last_irreversible_block_id']
 
@@ -32,7 +32,7 @@ args = {
 }
 
 action = ['eosio', 'updateauth', args, {account: 'active'}]
-tx = eosapi.gen_transaction([action], 10*60, ref_block, chain_id)
+tx = amaxapi.gen_transaction([action], 10*60, ref_block, chain_id)
 
 ##++++++++++++propose++++++++++++++
 args = {
@@ -60,4 +60,4 @@ args = {
     'executer': proposer
 }
 a3 = ['eosio.msig', 'exec', args, {proposer: 'active'}]
-eosapi.push_actions([a1, a2, a3])
+amaxapi.push_actions([a1, a2, a3])

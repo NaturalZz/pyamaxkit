@@ -4,13 +4,13 @@ import shutil
 import hashlib
 import marshal
 import subprocess
-from pyeoskit import eosapi, wallet
+from pyeoskit import amaxapi, wallet
 from pyeoskit import config
 
 def run_test_code(code, abi='', account_name='helloworld11'):
     publish_contract(account_name, code, abi)
     try:
-        r = eosapi.push_action(account_name, 'sayhello', b'hello,world', {account_name:'active'})
+        r = amaxapi.push_action(account_name, 'sayhello', b'hello,world', {account_name:'active'})
         print(r['processed']['action_traces'][0]['console'])
     except Exception as e:
         print(e)
@@ -21,7 +21,7 @@ def set_code(account_name, code):
     code = marshal.dumps(code)
     m.update(code)
     code_hash = m.hexdigest()
-    r = eosapi.get_code(account_name)
+    r = amaxapi.get_code(account_name)
     if code_hash == r['code_hash']:
         return
 
@@ -30,7 +30,7 @@ def set_code(account_name, code):
                "vmversion":0,
                "code":code.hex()
                }
-    eosapi.push_action(config.system_contract, 'setcode', setcode, {account_name:'active'})
+    amaxapi.push_action(config.system_contract, 'setcode', setcode, {account_name:'active'})
     
     return True
 
@@ -166,11 +166,11 @@ def publish_cpp_contract_from_file(account_name, file_name, includes = [], entry
     m.update(code)
     code_hash = m.hexdigest()
 
-    r = eosapi.get_code(account_name)
+    r = amaxapi.get_code(account_name)
     if code_hash != r['code_hash']:
         print('update contract')
         abi = open(f'{file_name}.abi', 'r').read()
-        r = eosapi.set_contract(account_name, code, abi, 0)
+        r = amaxapi.set_contract(account_name, code, abi, 0)
     return True
 #print(find_include_path())
 
@@ -180,9 +180,9 @@ def publish_cpp_contract(account_name, code, abi='', includes = [], entry='apply
     m = hashlib.sha256()
     m.update(code)
     code_hash = m.hexdigest()
-    r = eosapi.get_code(account_name)
+    r = amaxapi.get_code(account_name)
     if code_hash != r['code_hash']:
-        r = eosapi.set_contract(account_name, code, abi, vm_type)
+        r = amaxapi.set_contract(account_name, code, abi, vm_type)
     return True
 
 def publish_py_contract(account_name, code, abi, vm_type=1, includes = [], entry='apply'):
@@ -191,9 +191,9 @@ def publish_py_contract(account_name, code, abi, vm_type=1, includes = [], entry
     code = marshal.dumps(code)
     m.update(code)
     code_hash = m.hexdigest()
-    r = eosapi.get_code(account_name)
+    r = amaxapi.get_code(account_name)
     if code_hash != r['code_hash']:
-        eosapi.set_contract(account_name, code, abi, 1)
+        amaxapi.set_contract(account_name, code, abi, 1)
     return True
 
 def publish_contract(account_name, code, abi, vm_type=1, includes = [], entry='apply'):

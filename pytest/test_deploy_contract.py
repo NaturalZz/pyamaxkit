@@ -1,4 +1,4 @@
-from pyamaxkit import eosapi
+from pyamaxkit import amaxapi
 from pyamaxkit import wallet
 
 if os.path.exists('mywallet.wallet'):
@@ -60,12 +60,12 @@ abi = b'''
   ]
 }
 '''
-r = eosapi.pack_abi(abi)
+r = amaxapi.pack_abi(abi)
 print(r)
 #import sys;sys.exit(0)
 
-eosapi.deploy_contract('hello', code, abi, 1)
-r = eosapi.push_action('hello', 'sayhello', b'hello,world', {'hello':'active'})
+amaxapi.deploy_contract('hello', code, abi, 1)
+r = amaxapi.push_action('hello', 'sayhello', b'hello,world', {'hello':'active'})
 print(r)
 
 

@@ -1,8 +1,8 @@
 # sign with ledger example
 
-from pyamaxkit import eosapi
+from pyamaxkit import amaxapi
 from pyamaxkit import ledger
-eosapi.set_node('https://api.eosn.io')
+amaxapi.set_node('https://api.eosn.io')
 args = {
     'from': 'test1',
     'to': 'test2',
@@ -12,4 +12,4 @@ args = {
 pub_key = ledger.get_public_key(0)
 print('++++public key:', pub_key)
 #indices is an array of ledger signing key indices
-eosapi.push_action('eosio.token', 'transfer', args, {'test1':'active'}, indices=[0])
+amaxapi.push_action('eosio.token', 'transfer', args, {'test1':'active'}, indices=[0])

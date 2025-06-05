@@ -4,17 +4,17 @@ import sys
 import json
 import subprocess
 import logging
-from pyamaxkit import wallet, eosapi
+from pyamaxkit import wallet, amaxapi
 
 import httpx
 
-#eosapi.set_node('https://node.eosflare.io')
-#eosapi.set_node('https://user-api.eoseoul.io')
-#eosapi.set_node('eos.eoscafeblock.com')
-#eosapi.set_node('api.hkeos.com')
-#eosapi.set_node('https://eos.greymass.com')
-eosapi.set_node('api.hkeos.com')
-eosapi.set_node('api.eosn.io')
+#amaxapi.set_node('https://node.eosflare.io')
+#amaxapi.set_node('https://user-api.eoseoul.io')
+#amaxapi.set_node('eos.eoscafeblock.com')
+#amaxapi.set_node('api.hkeos.com')
+#amaxapi.set_node('https://eos.greymass.com')
+amaxapi.set_node('api.hkeos.com')
+amaxapi.set_node('api.eosn.io')
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s %(module)s %(lineno)d %(message)s')
 logger=logging.getLogger(__name__)
@@ -97,10 +97,10 @@ def commit(commit_id=None):
 
     try:
         id = 'aabbccdd'
-#        eosapi.set_node('https://user-api.eoseoul.io')
-#        eosapi.set_node('https://node.eosflare.io')
+#        amaxapi.set_node('https://user-api.eoseoul.io')
+#        amaxapi.set_node('https://node.eosflare.io')
         try:
-            r = eosapi.push_action('learnforever', 'sayhello', bytes.fromhex(id), {'learnforever':'sayhello'})
+            r = amaxapi.push_action('learnforever', 'sayhello', bytes.fromhex(id), {'learnforever':'sayhello'})
             print(r)
         except Exception as e:
             import time;time.sleep(3.0)

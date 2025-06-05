@@ -1,6 +1,6 @@
 #create account example
 
-from pyamaxkit import eosapi, wallet
+from pyamaxkit import amaxapi, wallet
 
 #import your account private key here
 wallet.import_key('mywallet', '5K463ynhZoCDDa4RDcr63cUwWLTnKqmdcoTKTHBjqoKfv4u5V7p')
@@ -38,4 +38,4 @@ actions.append(act)
 args = {'payer':creator, 'receiver':new_account, 'bytes':ram_bytes}
 act = ['eosio', 'buyrambytes', args, {creator:'active'}]
 actions.append(act)
-eosapi.push_actions(actions)
+amaxapi.push_actions(actions)

@@ -23,7 +23,7 @@ class TestChainApiAsync(object):
 
     @classmethod
     def setup_class(cls):
-        cls.eosapi = ChainApiAsync('http://127.0.0.1:9000')
+        cls.amaxapi = ChainApiAsync('http://127.0.0.1:9000')
 
         cls.testnet = Testnet(single_node=True, show_log=True)
         cls.testnet.run()
@@ -37,41 +37,41 @@ class TestChainApiAsync(object):
         cls.testnet.cleanup()
 
     def setup_method(self, method):
-        global eosapi_async
-        eosapi_async = ChainApiAsync('http://127.0.0.1:9000')
+        global amaxapi_async
+        amaxapi_async = ChainApiAsync('http://127.0.0.1:9000')
 
     def teardown_method(self, method):
         pass
 
     @pytest.mark.asyncio
     async def test_pack_unpack_args(self):
-        self.eosapi.clear_abi_cache('eosio.token')
+        self.amaxapi.clear_abi_cache('eosio.token')
         args = {
             'from': 'test1',
             'to': 'test2',
             'quantity': '0.0100 EOS',
             'memo': 'hello'
         }
-        r = self.eosapi.pack_args('eosio.token', 'transfer', args)
+        r = self.amaxapi.pack_args('eosio.token', 'transfer', args)
         assert r
 
-        r = self.eosapi.pack_args('eosio.token', 'transfer', json.dumps(args))
+        r = self.amaxapi.pack_args('eosio.token', 'transfer', json.dumps(args))
         assert r
 
-        r = self.eosapi.unpack_args('eosio.token', 'transfer', r)
+        r = self.amaxapi.unpack_args('eosio.token', 'transfer', r)
         logger.info(r)
 
         with pytest.raises(Exception):
-            r = self.eosapi.unpack_args('eosio.token', 'transfer', {'a':1})
+            r = self.amaxapi.unpack_args('eosio.token', 'transfer', {'a':1})
 
         with pytest.raises(Exception):
-            r = self.eosapi.unpack_args('eosio.token', 'transfer', json.dumps({'a':1}))
+            r = self.amaxapi.unpack_args('eosio.token', 'transfer', json.dumps({'a':1}))
 
         with pytest.raises(Exception):
-            r = self.eosapi.unpack_args('eosio.token', 'transfer', b'hello')
+            r = self.amaxapi.unpack_args('eosio.token', 'transfer', b'hello')
 
         with pytest.raises(Exception):
-            r = self.eosapi.unpack_args('eosio.token', 'transfer', 'aabb')
+            r = self.amaxapi.unpack_args('eosio.token', 'transfer', 'aabb')
 
 
     @pytest.mark.asyncio
@@ -83,12 +83,12 @@ class TestChainApiAsync(object):
             'memo': 'hello'
         }
         act = ['eosio.token', 'transfer', args, {'helloworld11': 'active'}]
-        logger.info("+++++++eosapi: %s", self.eosapi)
-        chain_info = await self.eosapi.get_info()
+        logger.info("+++++++amaxapi: %s", self.amaxapi)
+        chain_info = await self.amaxapi.get_info()
         chain_id = chain_info['chain_id']
         reference_block_id = chain_info['head_block_id']
-        trx = self.eosapi.generate_transaction([act], 60, reference_block_id, chain_id)
-        keys = await self.eosapi.get_required_keys(trx, wallet.get_public_keys())
+        trx = self.amaxapi.generate_transaction([act], 60, reference_block_id, chain_id)
+        keys = await self.amaxapi.get_required_keys(trx, wallet.get_public_keys())
         assert keys
 
         chain_id = chain_info['chain_id']
@@ -101,9 +101,9 @@ class TestChainApiAsync(object):
     async def test_tx(self):
         test_account = 'helloworld11'
         action = [test_account, 'sayhello', b'hello', {test_account: 'active'}]
-        r = await self.eosapi.push_action(*action)
+        r = await self.amaxapi.push_action(*action)
         time.sleep(0.5)
-        r = await self.eosapi.push_actions([action])
+        r = await self.amaxapi.push_actions([action])
         time.sleep(0.5)
-        r = await self.eosapi.push_transactions([[action]])
+        r = await self.amaxapi.push_transactions([[action]])
         time.sleep(0.5)
