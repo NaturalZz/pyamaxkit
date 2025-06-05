@@ -12,6 +12,8 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
+from shutil import which
+import platform
 
 
 def run(cmd):
@@ -20,6 +22,33 @@ def run(cmd):
 
 
 def main():
+    if which("go") is None:
+        raise RuntimeError(
+            "Go compiler not found. Install it and ensure 'go' is in your PATH."
+        )
+    if which("gcc") is None:
+        raise RuntimeError(
+            "C compiler not found. Install GCC or another compiler compatible with CGO."
+        )
+
+    # Align the Go target architecture with the current Python interpreter.
+    arch_map = {"x86_64": "amd64", "aarch64": "arm64"}
+    py_arch = platform.machine()
+    go_target = arch_map.get(py_arch, py_arch)
+    go_arch = subprocess.check_output(["go", "env", "GOARCH"]).decode().strip()
+    if go_arch != go_target:
+        print(f"Adjusting GOARCH from {go_arch} to {go_target} for wheel build")
+        os.environ["GOARCH"] = go_target
+        cross_cc_map = {
+            "arm64": "aarch64-linux-gnu-gcc",
+            "amd64": "x86_64-linux-gnu-gcc",
+        }
+        cross_cc = cross_cc_map.get(go_target)
+        if cross_cc and which(cross_cc):
+            os.environ.setdefault("CC", cross_cc)
+        elif cross_cc:
+            raise RuntimeError(f"Cross compiler '{cross_cc}' not found in PATH")
+
     # Ensure required tools are available
     # Use the current Python interpreter to ensure the ``python`` command
     # exists in environments where only ``python3`` is available.
