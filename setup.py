@@ -23,10 +23,10 @@ setup(
     author='learnforpractice',
     license="MIT",
     url="https://github.com/AMAX-DAO-DEV/pyamaxkit",
-    packages=['pyeoskit'],
-    # The extra '/' was *only* added to check that scikit-build can handle it.
-    package_dir={'pyeoskit': 'pysrc'},
-    package_data={'pyeoskit': data},
+    packages=['pyamaxkit', 'pyeoskit'],
+    # Expose the library under both package names for backward compatibility.
+    package_dir={'pyamaxkit': 'pysrc', 'pyeoskit': 'pyeoskit'},
+    package_data={'pyamaxkit': data},
     install_requires=[
         'requests_unixsocket>=0.2.0',
         'httpx>=0.19.0',

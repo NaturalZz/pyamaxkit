@@ -1,7 +1,7 @@
 # sign with ledger example
 
-from pyeoskit import eosapi
-from pyeoskit import ledger
+from pyamaxkit import eosapi
+from pyamaxkit import ledger
 eosapi.set_node('https://api.eosn.io')
 args = {
     'from': 'test1',
