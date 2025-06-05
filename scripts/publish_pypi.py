@@ -10,6 +10,7 @@ environment variable.
 import os
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 
@@ -20,14 +21,16 @@ def run(cmd):
 
 def main():
     # Ensure required tools are available
-    run("python -m pip install --upgrade build twine")
+    # Use the current Python interpreter to ensure the ``python`` command
+    # exists in environments where only ``python3`` is available.
+    run(f"{sys.executable} -m pip install --upgrade build twine")
 
     dist_dir = Path("dist")
     if dist_dir.exists():
         shutil.rmtree(dist_dir)
 
     # Build sdist and wheel
-    run("python -m build")
+    run(f"{sys.executable} -m build")
 
     repository = os.environ.get("PYPI_REPOSITORY", "pypi")
     token = os.environ.get("PYPI_TOKEN")

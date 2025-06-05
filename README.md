@@ -163,7 +163,7 @@ Use the helper script to build and upload the package. Set `PYPI_TOKEN` with you
 API token and optionally `PYPI_REPOSITORY` (defaults to `pypi`).
 
 ```bash
-python scripts/publish_pypi.py
+python3 scripts/publish_pypi.py
 ```
 
 ### License
