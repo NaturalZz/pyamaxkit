@@ -5,6 +5,21 @@ from typing import List, Dict, Union
 from . import _pyeoskit
 from .exceptions import WalletException
 from .transaction import Transaction
+from . import config
+
+def _to_eos_prefix(pub_key: str) -> str:
+    """Convert a public key from the configured prefix to EOS for internal use."""
+    prefix = config.public_key_prefix
+    if prefix != 'EOS' and pub_key.startswith(prefix):
+        return 'EOS' + pub_key[len(prefix):]
+    return pub_key
+
+def _from_eos_prefix(pub_key: str) -> str:
+    """Convert a public key from EOS prefix to the configured prefix."""
+    prefix = config.public_key_prefix
+    if prefix != 'EOS' and pub_key.startswith('EOS'):
+        return prefix + pub_key[3:]
+    return pub_key
 
 def check_result(result, json=False):
     ret = json_.loads(result)
@@ -36,7 +51,8 @@ def list_keys(name, psw) -> Dict[str, str]:
 def get_public_keys():
     ret = _pyeoskit.wallet_get_public_keys()
     ret = json.loads(ret)
-    return ret['data']
+    keys = [_from_eos_prefix(k) for k in ret['data']]
+    return keys
 
 def lock_all():
     pass
@@ -52,7 +68,7 @@ def import_key(name, wif_key, save=True):
     return check_result(ret)
 
 def remove_key(name, pub_key):
-    ret = _pyeoskit.wallet_remove(name, pub_key)
+    ret = _pyeoskit.wallet_remove(name, _to_eos_prefix(pub_key))
     return ret
 
 def sign_transaction(chain_index, trx: Union[str, dict], public_keys: List[str], chain_id: str, json=False):
@@ -60,12 +76,12 @@ def sign_transaction(chain_index, trx: Union[str, dict], public_keys: List[str],
         trx = json_.dumps(trx)
     t = Transaction.from_json(chain_index, trx, chain_id)
     for pub in public_keys:
-        t.sign(pub)
+        t.sign(_to_eos_prefix(pub))
     return t.pack(load=True)
 
 def sign_digest(digest: Union[bytes, str], public_key: str):
     if isinstance(digest, bytes):
         digest = digest.hex()
-    ret = _pyeoskit.wallet_sign_digest(digest, public_key)
+    ret = _pyeoskit.wallet_sign_digest(digest, _to_eos_prefix(public_key))
     return check_result(ret)
 
