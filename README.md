@@ -105,10 +105,15 @@ amaxapi.push_action('amax.token', 'transfer', args, {'test1':'active'}, indices=
 
 ### Installing Prerequisites
 
+Install the build dependencies:
+
 ```
 python3 -m pip install scikit-build
 python3 -m pip install cython
 ```
+
+Install the [Go compiler](https://golang.org/doc/install#download) and `cmake`
+with your system package manager so that the CGo components can be compiled.
 
 For Windows platform
 

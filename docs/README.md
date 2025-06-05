@@ -40,10 +40,15 @@ python -m pip install pyamaxkit
 
 ### Installing Prerequisites
 
+Install the build dependencies:
+
 ```
 python3 -m pip install scikit-build
 python3 -m pip install cython
 ```
+
+Install the [Go compiler](https://golang.org/doc/install#download) and `cmake`
+using your system package manager so the CGo components can be compiled.
 
 For Windows platform
 
