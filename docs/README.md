@@ -49,6 +49,15 @@ python3 -m pip install cython
 
 Install the [Go compiler](https://golang.org/doc/install#download) and `cmake`
 using your system package manager so the CGo components can be compiled.
+A C compiler such as ``gcc`` is also required. On Debian based systems run
+``sudo apt-get install build-essential``. For cross compilation install the
+matching toolchain (e.g. ``gcc-aarch64-linux-gnu``) and set ``GOARCH`` and ``CC``
+before building:
+
+```bash
+export GOARCH=arm64
+export CC=aarch64-linux-gnu-gcc
+```
 
 For Windows platform
 
