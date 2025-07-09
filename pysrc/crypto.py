@@ -19,3 +19,10 @@ def create_key(old_format=True):
     data = check_result(ret)
     data['public'] = _convert_prefix(data['public'])
     return data
+
+def to_eos_prefix(pub_key: str) -> str:
+    """Convert a public key using the configured prefix back to the EOS prefix."""
+    prefix = config.public_key_prefix
+    if prefix != 'EOS' and pub_key.startswith(prefix):
+        return 'EOS' + pub_key[len(prefix):]
+    return pub_key
