@@ -7,7 +7,7 @@
 
 ## create_key
 
-[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/crypto.py#L4)
+[[find in source code]](https://github.com/AMAX-DAO-DEV/pyamaxkit/blob/master/pysrc/crypto.py#L1)
 
 ```python
 def create_key(old_format=True):
