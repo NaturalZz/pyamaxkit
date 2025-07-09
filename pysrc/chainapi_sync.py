@@ -9,6 +9,7 @@ from . import defaultabi
 from . import wasmcompiler
 from . import log
 from . import ledger
+from .crypto import to_eos_prefix
 
 from .transaction import Transaction
 from .chaincache import ChainCache
@@ -220,6 +221,9 @@ class ChainApi(RPCInterface, ChainNative):
             raise e
 
     def create_account(self, creator, account, owner_key, active_key, ram_bytes=0, stake_net=0.0, stake_cpu=0.0, sign=True, indices=None):
+        owner_key = to_eos_prefix(owner_key)
+        active_key = to_eos_prefix(active_key)
+
         actions = []
         args = {
             'creator': creator,
