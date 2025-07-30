@@ -159,7 +159,7 @@ class ChainApiAsync(RPCInterface, ChainNative):
             signatures = set()
             sign_keys = required_keys & set(local_wallet_pub_keys)
             for key in sign_keys:
-                signatures.add(tx.sign(wallet._to_eos_prefix(key)))
+                signatures.add(tx.sign(wallet._to_amax_prefix(key)))
 
             packed_tx = tx.pack(compress, False)
             sign_keys = required_keys & set(ledger_pub_keys)
@@ -263,8 +263,8 @@ class ChainApiAsync(RPCInterface, ChainNative):
             args = {
                 'from': creator,
                 'receiver': account,
-                'stake_net_quantity': '%0.4f %s'%(stake_net, config.main_token),
-                'stake_cpu_quantity': '%0.4f %s'%(stake_cpu, config.main_token),
+                'stake_net_quantity': '%0.8f %s'%(stake_net, config.main_token),
+                'stake_cpu_quantity': '%0.8f %s'%(stake_cpu, config.main_token),
                 'transfer': 1
             }
             args = self.pack_args(config.system_contract, 'delegatebw', args)
